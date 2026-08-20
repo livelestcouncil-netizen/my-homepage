@@ -1162,3 +1162,65 @@ p {
 
     object-fit: cover;
 }
+/* =========================
+   SMARTPHONE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 60px 20px 50px;
+    }
+
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        line-height: 1.5;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .hero-photo {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+
+        border-radius: 14px;
+    }
+
+    .hero-photo img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16 / 9;
+
+        object-fit: cover;
+    }
+
+}
