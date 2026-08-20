@@ -1137,3 +1137,28 @@ p {
     }
 
 }
+/* =========================
+   HERO PHOTO
+========================= */
+
+.hero-photo {
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.hero-photo img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+}
