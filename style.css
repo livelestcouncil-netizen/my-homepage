@@ -1597,3 +1597,315 @@ p {
     }
 
 }
+/* =========================================================
+   REPRESENTATIVE PAGE
+   ========================================================= */
+
+.representative-page-hero {
+    background: linear-gradient(
+        135deg,
+        #f1f7f3 0%,
+        #ffffff 60%,
+        #edf5f0 100%
+    );
+
+    padding: 90px 0;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e2ebe5;
+}
+
+.representative-page-hero h1 {
+    color: #263c32;
+
+    font-size: clamp(36px, 5vw, 52px);
+
+    line-height: 1.4;
+
+    margin-bottom: 20px;
+}
+
+.representative-page-hero p:last-child {
+    color: #68756f;
+
+    font-size: 17px;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   REPRESENTATIVE PROFILE
+========================= */
+
+.representative-profile {
+    background: #ffffff;
+}
+
+.representative-profile-grid {
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+
+    max-width: 980px;
+
+    margin: 0 auto;
+}
+
+.representative-profile-image {
+    width: 320px;
+
+    margin: 0 auto;
+}
+
+.representative-profile-image img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 35px rgba(42, 68, 55, 0.12);
+}
+
+.representative-profile-content h2 {
+    color: #294b3b;
+
+    font-size: 32px;
+
+    line-height: 1.5;
+
+    margin-bottom: 8px;
+}
+
+.representative-position {
+    color: #68746e;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+.profile-message {
+    color: #5d6963;
+
+    line-height: 2;
+
+    font-size: 16px;
+}
+
+.profile-message p {
+    margin-bottom: 20px;
+}
+
+.profile-message p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+.representative-philosophy {
+    background: #f5f8f6;
+}
+
+.philosophy-box {
+    background: #ffffff;
+
+    padding: 55px 65px;
+
+    border-left: 5px solid #4f8d6c;
+
+    border-radius: 8px;
+
+    box-shadow: 0 8px 25px rgba(42, 68, 55, 0.04);
+}
+
+.philosophy-box h3 {
+    color: #294b3b;
+
+    font-size: 27px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.philosophy-box p {
+    color: #586761;
+
+    line-height: 2.1;
+
+    margin-bottom: 20px;
+}
+
+.philosophy-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   APPROACH
+========================= */
+
+.representative-service {
+    background: #ffffff;
+}
+
+.approach-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.approach-card {
+    padding: 35px 32px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe8e2;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(42, 68, 55, 0.04);
+}
+
+.approach-card > span {
+    color: #6ba082;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+}
+
+.approach-card h3 {
+    color: #2c493b;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin: 13px 0 14px;
+}
+
+.approach-card p {
+    color: #68746e;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin: 0;
+}
+
+
+/* =========================
+   PEOPLE
+========================= */
+
+.representative-people {
+    background: #f8faf9;
+}
+
+.people-message {
+    color: #586761;
+
+    font-size: 17px;
+
+    line-height: 2.1;
+
+    text-align: center;
+}
+
+.people-message p {
+    margin-bottom: 24px;
+}
+
+.people-message p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   REPRESENTATIVE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .representative-page-hero {
+        padding: 65px 0;
+    }
+
+    .representative-page-hero h1 {
+        font-size: 36px;
+    }
+
+    .representative-page-hero p:last-child {
+        font-size: 15px;
+    }
+
+    .representative-profile-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .representative-profile-image {
+        width: min(280px, 80%);
+
+        margin: 0 auto;
+    }
+
+    .representative-profile-content h2 {
+        font-size: 28px;
+    }
+
+    .profile-message {
+        text-align: left;
+
+        font-size: 15px;
+    }
+
+    .philosophy-box {
+        padding: 35px 25px;
+    }
+
+    .philosophy-box h3 {
+        font-size: 22px;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-card {
+        padding: 30px 24px;
+    }
+
+    .people-message {
+        text-align: left;
+
+        font-size: 15px;
+    }
+
+}
