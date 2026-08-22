@@ -1909,3 +1909,311 @@ p {
     }
 
 }
+/* =========================================================
+   REPRESENTATIVE PAGE
+   ========================================================= */
+
+.representative-page-hero {
+    padding: 90px 0 85px;
+    background:
+        linear-gradient(
+            135deg,
+            #f1f7f3 0%,
+            #ffffff 60%,
+            #edf5f0 100%
+        );
+    border-bottom: 1px solid #e2ebe5;
+}
+
+.representative-page-hero h1 {
+    color: #263c32;
+    font-size: clamp(36px, 5vw, 54px);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.representative-page-hero > div > p:last-child {
+    color: #5f6e67;
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+/* PROFILE */
+
+.representative-profile {
+    background: #ffffff;
+}
+
+.representative-profile-inner {
+    display: grid;
+    grid-template-columns: 0.72fr 1.28fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.representative-profile-photo {
+    width: min(360px, 100%);
+    margin: 0 auto;
+}
+
+.representative-profile-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(42, 68, 55, 0.12);
+}
+
+.representative-profile-content h2 {
+    color: #294b3b;
+    font-size: 34px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.representative-title {
+    color: #4f8065;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.representative-profile-content > p:not(.section-label):not(.representative-title) {
+    color: #5d6963;
+    line-height: 2.05;
+}
+
+
+/* MESSAGE */
+
+.representative-message {
+    background: #f5f8f6;
+}
+
+.representative-message-box {
+    background: #ffffff;
+    padding: 55px 65px;
+    border-left: 5px solid #4f8d6c;
+    border-radius: 8px;
+}
+
+.representative-message-box h3 {
+    color: #294b3b;
+    font-size: 28px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.representative-message-box p {
+    color: #5d6963;
+    line-height: 2.1;
+}
+
+
+/* QUALIFICATION */
+
+.qualification-section {
+    background: #ffffff;
+}
+
+.qualification-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.qualification-card {
+    padding: 38px 30px;
+    background: #f7faf8;
+    border: 1px solid #dfe8e2;
+    border-radius: 14px;
+}
+
+.qualification-card > span {
+    display: block;
+    color: #5e9978;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+}
+
+.qualification-card h3 {
+    color: #294b3b;
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.qualification-card p {
+    color: #65726c;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+
+/* SPECIALTY */
+
+.representative-specialty {
+    background: #f5f8f6;
+}
+
+.representative-specialty-inner {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.representative-specialty h2 {
+    color: #294b3b;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.55;
+}
+
+.representative-specialty-inner > div:last-child p {
+    color: #5d6963;
+    line-height: 2.1;
+}
+
+
+/* PHILOSOPHY */
+
+.philosophy-section {
+    background: #ffffff;
+}
+
+.philosophy-box {
+    text-align: center;
+    padding: 55px 45px;
+    background: #f4f8f5;
+    border-radius: 14px;
+    border: 1px solid #dce7df;
+}
+
+.philosophy-main {
+    color: #2f6b50 !important;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px !important;
+}
+
+.philosophy-box p {
+    color: #5d6963;
+    line-height: 2.1;
+}
+
+
+/* CAREER */
+
+.career-section {
+    background: #f8faf9;
+}
+
+.career-box {
+    border-top: 1px solid #dfe7e1;
+}
+
+.career-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 25px;
+    padding: 30px 0;
+    border-bottom: 1px solid #dfe7e1;
+}
+
+.career-number {
+    color: #5e9978;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.career-item h3 {
+    color: #294b3b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.career-item p {
+    color: #65726c;
+    line-height: 2;
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .representative-page-hero {
+        padding: 65px 0 60px;
+    }
+
+    .representative-page-hero h1 {
+        font-size: 36px;
+    }
+
+    .representative-page-hero > div > p:last-child {
+        font-size: 16px;
+    }
+
+    .representative-profile-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .representative-profile-photo {
+        width: min(280px, 75%);
+    }
+
+    .representative-profile-content {
+        text-align: center;
+    }
+
+    .representative-profile-content h2 {
+        font-size: 29px;
+    }
+
+    .representative-message-box {
+        padding: 35px 25px;
+    }
+
+    .representative-message-box h3 {
+        font-size: 23px;
+    }
+
+    .qualification-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .qualification-card {
+        padding: 30px 25px;
+    }
+
+    .representative-specialty-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .representative-specialty h2 {
+        font-size: 30px;
+    }
+
+    .philosophy-box {
+        padding: 40px 25px;
+    }
+
+    .philosophy-main {
+        font-size: 25px;
+    }
+
+    .career-item {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+    }
+
+}
