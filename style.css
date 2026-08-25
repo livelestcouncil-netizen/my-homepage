@@ -2515,3 +2515,52 @@ p {
     }
 
 }
+/* =========================================================
+   REPRESENTATIVE - CLOSING
+   ========================================================= */
+
+.representative-closing-section {
+    background: #f5f8f6;
+
+    text-align: center;
+}
+
+.representative-closing {
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+.representative-closing h2 {
+    color: #294b3b;
+
+    font-size: clamp(28px, 4vw, 40px);
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.representative-closing > p:not(.section-label):not(.closing-emphasis) {
+    color: #5d6963;
+
+    line-height: 2.1;
+
+    margin-bottom: 30px;
+}
+
+.closing-emphasis {
+    color: #2f6b50;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 2;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+}
