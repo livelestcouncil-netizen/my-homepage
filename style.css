@@ -2217,3 +2217,43 @@ p {
     }
 
 }
+/* =========================
+   QUALIFICATION LIST
+========================= */
+
+.qualification-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.qualification-list li {
+    position: relative;
+
+    color: #5d6963;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    padding: 10px 0 10px 20px;
+
+    border-bottom: 1px solid #e1e9e3;
+}
+
+.qualification-list li:last-child {
+    border-bottom: none;
+}
+
+.qualification-list li::before {
+    content: "●";
+
+    position: absolute;
+
+    left: 0;
+    top: 10px;
+
+    color: #5e9978;
+
+    font-size: 9px;
+}
