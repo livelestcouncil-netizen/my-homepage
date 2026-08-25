@@ -2564,3 +2564,949 @@ p {
 
     border-radius: 10px;
 }
+/* =========================================================
+   REPRESENTATIVE PAGE
+   代表紹介ページ専用デザイン
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE HERO
+   ========================================================= */
+
+.representative-page-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 100px 0 90px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef6f1 0%,
+            #ffffff 55%,
+            #edf5f0 100%
+        );
+
+    border-bottom: 1px solid #e1ebe5;
+}
+
+.representative-page-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: rgba(100, 160, 125, 0.07);
+
+    top: -180px;
+    right: -80px;
+}
+
+.representative-page-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background: rgba(100, 160, 125, 0.05);
+
+    bottom: -120px;
+    left: -70px;
+}
+
+.representative-page-hero .container {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+}
+
+.representative-page-hero .section-label {
+    margin-bottom: 18px;
+}
+
+.representative-page-hero h1 {
+    color: #263c32;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.4;
+
+    letter-spacing: 0.08em;
+
+    margin-bottom: 25px;
+}
+
+.representative-page-hero p:last-child {
+    color: #5f6e67;
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
+
+.representative-profile {
+    background: #ffffff;
+}
+
+.representative-profile-inner {
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.25fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.representative-profile-photo {
+    width: 100%;
+
+    max-width: 400px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 18px 45px rgba(42, 71, 58, 0.10);
+
+    border: 1px solid #dce7e0;
+
+    background: #f4f8f5;
+}
+
+.representative-profile-photo img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.representative-profile-content {
+    max-width: 650px;
+}
+
+.representative-profile-content .section-label {
+    margin-bottom: 10px;
+}
+
+.representative-profile-content h2 {
+    color: #294b3b;
+
+    font-size: clamp(32px, 4vw, 44px);
+
+    line-height: 1.4;
+
+    letter-spacing: 0.06em;
+
+    margin-bottom: 10px;
+}
+
+.representative-title {
+    color: #4f8065 !important;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px !important;
+}
+
+.representative-profile-content > p:not(.section-label):not(.representative-title) {
+    color: #5d6963;
+
+    line-height: 2.1;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   REPRESENTATIVE MESSAGE
+   ========================================================= */
+
+.representative-message {
+    background: #f5f8f6;
+}
+
+.representative-message-box {
+    padding: 55px 65px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0e9e3;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 30px rgba(42, 68, 55, 0.05);
+}
+
+.representative-message-box h3 {
+    color: #294b3b;
+
+    font-size: clamp(25px, 3vw, 32px);
+
+    line-height: 1.7;
+
+    letter-spacing: 0.04em;
+
+    margin-bottom: 35px;
+}
+
+.representative-message-box p {
+    color: #5d6963;
+
+    line-height: 2.15;
+
+    margin-bottom: 24px;
+}
+
+.representative-message-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   QUALIFICATION
+   ========================================================= */
+
+.qualification-section {
+    background: #ffffff;
+}
+
+.qualification-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.qualification-card {
+    background: #f7faf8;
+
+    border: 1px solid #dfe9e2;
+
+    border-radius: 14px;
+
+    padding: 35px 30px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.qualification-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #b9d2c2;
+
+    box-shadow:
+        0 12px 30px rgba(42, 68, 55, 0.07);
+}
+
+.qualification-card > span {
+    display: block;
+
+    color: #6b9c80;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    line-height: 1.5;
+
+    margin-bottom: 14px;
+}
+
+.qualification-card h3 {
+    color: #294b3b;
+
+    font-size: 21px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.qualification-list {
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.qualification-list li {
+    position: relative;
+
+    color: #5d6963;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    padding-left: 18px;
+
+    margin-bottom: 9px;
+}
+
+.qualification-list li::before {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #6b9c80;
+
+    left: 0;
+    top: 0.75em;
+}
+
+.qualification-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CAREER
+   ========================================================= */
+
+.career-section {
+    background: #f5f8f6;
+}
+
+.career-timeline {
+    position: relative;
+
+    max-width: 980px;
+
+    margin: 0 auto;
+}
+
+.career-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 170px;
+
+    width: 1px;
+
+    background: #cbdcd1;
+}
+
+.career-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 170px 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 55px;
+}
+
+.career-item:last-child {
+    padding-bottom: 0;
+}
+
+.career-year {
+    position: relative;
+
+    color: #3f7659;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    line-height: 1.6;
+
+    text-align: right;
+
+    padding-right: 35px;
+}
+
+.career-year::after {
+    content: "";
+
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 3px solid #5f9978;
+
+    right: -7px;
+
+    top: 5px;
+
+    z-index: 2;
+}
+
+.career-year span {
+    color: #789087;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.career-content {
+    background: #ffffff;
+
+    padding: 32px 35px;
+
+    border: 1px solid #e0e8e3;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 7px 22px rgba(42, 68, 55, 0.04);
+}
+
+.career-label {
+    display: inline-block;
+
+    color: #5e9978;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    margin-bottom: 10px;
+}
+
+.career-content h3 {
+    color: #294b3b;
+
+    font-size: 22px;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+.career-content p {
+    color: #606d66;
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    margin-bottom: 18px;
+}
+
+.career-content p:last-child {
+    margin-bottom: 0;
+}
+
+.career-emphasis {
+    color: #2f6b50 !important;
+
+    font-size: 18px !important;
+
+    font-weight: 700;
+
+    line-height: 1.9 !important;
+
+    padding: 18px 20px;
+
+    background: #f1f7f3;
+
+    border-left: 4px solid #5e9978;
+
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   CLOSING MESSAGE
+   ========================================================= */
+
+.representative-closing-section {
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.representative-closing {
+    padding: 20px 0;
+}
+
+.representative-closing .section-label {
+    margin-bottom: 15px;
+}
+
+.representative-closing h2 {
+    color: #294b3b;
+
+    font-size: clamp(30px, 4vw, 42px);
+
+    line-height: 1.6;
+
+    letter-spacing: 0.05em;
+
+    margin-bottom: 35px;
+}
+
+.representative-closing > p:not(.section-label):not(.closing-emphasis) {
+    color: #5e6b64;
+
+    font-size: 16px;
+
+    line-height: 2.15;
+
+    max-width: 680px;
+
+    margin: 0 auto 30px;
+}
+
+.closing-emphasis {
+    color: #2f6b50 !important;
+
+    font-size: 19px !important;
+
+    font-weight: 700;
+
+    line-height: 2 !important;
+
+    margin-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   HUMAN & ORGANIZATION
+   ========================================================= */
+
+.representative-specialty {
+    background: #f5f8f6;
+}
+
+.representative-specialty-inner {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 75px;
+
+    align-items: start;
+}
+
+.representative-specialty-inner h2 {
+    color: #294b3b;
+
+    font-size: clamp(28px, 4vw, 40px);
+
+    line-height: 1.6;
+
+    letter-spacing: 0.04em;
+}
+
+.representative-specialty-inner > div:last-child {
+    padding-top: 8px;
+}
+
+.representative-specialty-inner p {
+    color: #5d6963;
+
+    line-height: 2.1;
+
+    margin-bottom: 24px;
+}
+
+.representative-specialty-inner p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+   ========================================================= */
+
+.philosophy-section {
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.philosophy-box {
+    padding: 55px 65px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f1f7f3,
+            #f8faf9
+        );
+
+    border: 1px solid #dfe9e2;
+
+    border-radius: 14px;
+}
+
+.philosophy-main {
+    color: #2f6b50 !important;
+
+    font-size: 28px !important;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    line-height: 1.7 !important;
+
+    margin-bottom: 35px !important;
+}
+
+.philosophy-box p:not(.philosophy-main) {
+    color: #5d6963;
+
+    font-size: 16px;
+
+    line-height: 2.1;
+
+    margin-bottom: 22px;
+}
+
+.philosophy-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   REPRESENTATIVE PAGE - TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .representative-profile-inner {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .representative-profile-photo {
+        width: min(400px, 100%);
+    }
+
+    .representative-profile-content {
+        max-width: 760px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .representative-profile-content .section-label {
+        margin-bottom: 10px;
+    }
+
+    .qualification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qualification-card {
+        padding: 32px 30px;
+    }
+
+    .career-timeline::before {
+        left: 130px;
+    }
+
+    .career-item {
+        grid-template-columns: 130px 1fr;
+
+        gap: 35px;
+    }
+
+    .career-year {
+        padding-right: 28px;
+
+        font-size: 15px;
+    }
+
+    .representative-specialty-inner {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   REPRESENTATIVE PAGE - MOBILE
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    .representative-page-hero {
+        padding: 70px 0 65px;
+    }
+
+    .representative-page-hero h1 {
+        font-size: 35px;
+
+        margin-bottom: 20px;
+    }
+
+    .representative-page-hero p:last-child {
+        font-size: 15px;
+
+        line-height: 2;
+    }
+
+
+    /* Profile */
+
+    .representative-profile-inner {
+        gap: 35px;
+    }
+
+    .representative-profile-photo {
+        width: min(320px, 100%);
+    }
+
+    .representative-profile-content h2 {
+        font-size: 31px;
+    }
+
+    .representative-profile-content > p:not(.section-label):not(.representative-title) {
+        text-align: left;
+
+        font-size: 15px;
+
+        line-height: 2;
+    }
+
+
+    /* Message */
+
+    .representative-message-box {
+        padding: 35px 25px;
+    }
+
+    .representative-message-box h3 {
+        font-size: 23px;
+
+        line-height: 1.7;
+
+        margin-bottom: 28px;
+    }
+
+    .representative-message-box p {
+        font-size: 15px;
+
+        line-height: 2;
+    }
+
+
+    /* Qualification */
+
+    .qualification-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .qualification-card {
+        padding: 28px 24px;
+    }
+
+    .qualification-card h3 {
+        font-size: 20px;
+    }
+
+
+    /* Career */
+
+    .career-timeline {
+        padding-left: 0;
+    }
+
+    .career-timeline::before {
+        left: 11px;
+    }
+
+    .career-item {
+        display: block;
+
+        padding-left: 35px;
+
+        padding-bottom: 40px;
+    }
+
+    .career-year {
+        text-align: left;
+
+        padding: 0 0 15px 0;
+
+        font-size: 15px;
+    }
+
+    .career-year::after {
+        left: -30px;
+
+        right: auto;
+
+        top: 3px;
+    }
+
+    .career-content {
+        padding: 27px 22px;
+    }
+
+    .career-content h3 {
+        font-size: 20px;
+
+        line-height: 1.6;
+    }
+
+    .career-content p {
+        font-size: 14px;
+
+        line-height: 2;
+    }
+
+    .career-emphasis {
+        font-size: 16px !important;
+
+        padding: 16px;
+    }
+
+
+    /* Closing */
+
+    .representative-closing h2 {
+        font-size: 28px;
+
+        line-height: 1.7;
+    }
+
+    .representative-closing > p:not(.section-label):not(.closing-emphasis) {
+        font-size: 15px;
+
+        line-height: 2;
+    }
+
+    .closing-emphasis {
+        font-size: 17px !important;
+
+        line-height: 2 !important;
+    }
+
+
+    /* Human & Organization */
+
+    .representative-specialty-inner {
+        gap: 25px;
+    }
+
+    .representative-specialty-inner h2 {
+        font-size: 28px;
+
+        line-height: 1.6;
+    }
+
+    .representative-specialty-inner p {
+        font-size: 15px;
+
+        line-height: 2;
+    }
+
+
+    /* Philosophy */
+
+    .philosophy-box {
+        padding: 35px 25px;
+    }
+
+    .philosophy-main {
+        font-size: 23px !important;
+
+        line-height: 1.7 !important;
+    }
+
+    .philosophy-box p:not(.philosophy-main) {
+        font-size: 15px;
+
+        line-height: 2;
+    }
+
+}
+
+
+/* =========================================================
+   REPRESENTATIVE PAGE - SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .representative-page-hero h1 {
+        font-size: 31px;
+    }
+
+    .representative-profile-photo {
+        width: 100%;
+    }
+
+    .representative-message-box {
+        padding: 30px 20px;
+    }
+
+    .career-item {
+        padding-left: 30px;
+    }
+
+    .career-timeline::before {
+        left: 8px;
+    }
+
+    .career-year::after {
+        left: -27px;
+    }
+
+}
