@@ -3510,3 +3510,357 @@ p {
     }
 
 }
+/* =========================================================
+   ORGANIZATION PAGE
+   人材育成・組織づくり
+========================================================= */
+
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.organization-page-hero {
+    padding: 110px 0 100px;
+    background: linear-gradient(
+        135deg,
+        #6cae73 0%,
+        #229d6d 100%
+    );
+    color: #fff;
+}
+
+.organization-page-hero .section-label {
+    color: rgba(255,255,255,0.85);
+}
+
+.organization-page-hero h1 {
+    margin: 20px 0 25px;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+}
+
+.organization-page-hero p:last-child {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.organization-introduction {
+    background: #fff;
+}
+
+.organization-lead {
+    max-width: 850px;
+    margin: 50px auto 0;
+    font-size: 17px;
+    line-height: 2.2;
+}
+
+.organization-lead p {
+    margin-bottom: 28px;
+}
+
+.organization-lead strong {
+    font-weight: 700;
+}
+
+
+/* =========================
+   ICM
+========================= */
+
+.organization-icm-section {
+    background: #f7faf8;
+}
+
+.icm-introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.icm-text h3 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.icm-text p {
+    margin-bottom: 22px;
+    line-height: 2;
+}
+
+.icm-image img,
+.workplace-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+/* =========================
+   WORKPLACE IMPROVEMENT
+========================= */
+
+.workplace-improvement-section {
+    background: #fff;
+}
+
+.workplace-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.workplace-content h3 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.workplace-content p {
+    margin-bottom: 22px;
+    line-height: 2;
+}
+
+.organization-check-list {
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.organization-check-list li {
+    position: relative;
+    padding: 12px 0 12px 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.organization-check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CARD SUPPORT
+========================= */
+
+.card-support-section {
+    background: #f5faf9;
+}
+
+.card-support-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.growth-card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.growth-card-image {
+    margin-bottom: 20px;
+}
+
+.growth-card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.growth-card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.growth-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.card-support-message {
+    max-width: 850px;
+    margin: 55px auto 0;
+    text-align: center;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.card-support-message p {
+    margin-bottom: 15px;
+}
+
+.organization-certification {
+    margin-top: 50px;
+    text-align: center;
+    color: #555;
+}
+
+.organization-certification p {
+    margin: 5px 0;
+}
+
+.certification-label {
+    font-size: 14px;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.organization-process-section {
+    background: #fff;
+}
+
+.organization-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.process-card {
+    position: relative;
+    padding: 40px 35px;
+    background: #f7faf8;
+    border-top: 4px solid #59a86a;
+}
+
+.process-number {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+}
+
+.process-card h3 {
+    margin-bottom: 18px;
+    font-size: 27px;
+}
+
+.process-card p {
+    margin: 0;
+    line-height: 2;
+}
+
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+.organization-philosophy-section {
+    background: #f5f7f5;
+}
+
+.organization-philosophy {
+    text-align: center;
+}
+
+.organization-philosophy h2 {
+    margin: 25px 0 40px;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.6;
+}
+
+.organization-philosophy p:not(.section-label):not(.organization-emphasis) {
+    margin-bottom: 25px;
+    text-align: left;
+    line-height: 2.1;
+}
+
+.organization-emphasis {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 2;
+    font-weight: 700;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .icm-introduction,
+    .workplace-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .card-support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .organization-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .organization-page-hero {
+        padding: 80px 0 70px;
+    }
+
+    .organization-page-hero h1 {
+        font-size: 34px;
+    }
+
+    .organization-page-hero p:last-child {
+        font-size: 18px;
+    }
+
+    .organization-lead {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .icm-text h3,
+    .workplace-content h3 {
+        font-size: 23px;
+    }
+
+    .card-support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .growth-card {
+        padding: 20px;
+    }
+
+    .organization-philosophy h2 {
+        font-size: 27px;
+    }
+
+    .organization-emphasis {
+        font-size: 20px;
+    }
+
+}
