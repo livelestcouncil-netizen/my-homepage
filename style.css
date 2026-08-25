@@ -2257,3 +2257,261 @@ p {
 
     font-size: 9px;
 }
+/* =========================================================
+   REPRESENTATIVE - CAREER
+   ========================================================= */
+
+.career-section {
+    background: #ffffff;
+}
+
+.career-timeline {
+    position: relative;
+
+    max-width: 920px;
+
+    margin: 0 auto;
+}
+
+/* 縦のライン */
+
+.career-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 145px;
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    background: #d8e5dc;
+}
+
+
+/* 各経歴 */
+
+.career-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 145px 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 65px;
+}
+
+.career-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/* 年 */
+
+.career-year {
+    position: relative;
+
+    color: #2f6b50;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1.7;
+
+    text-align: right;
+
+    padding-right: 38px;
+}
+
+.career-year::after {
+    content: "";
+
+    position: absolute;
+
+    right: -5px;
+    top: 7px;
+
+    width: 11px;
+    height: 11px;
+
+    background: #5e9978;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 1px #bcd3c4;
+}
+
+.career-year span {
+    color: #7a8780;
+
+    font-size: 12px;
+}
+
+
+/* 内容 */
+
+.career-content {
+    background: #f6f9f7;
+
+    padding: 30px 35px;
+
+    border: 1px solid #e1e9e3;
+
+    border-radius: 12px;
+}
+
+.career-label {
+    display: inline-block;
+
+    color: #5e9978;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    margin-bottom: 10px;
+}
+
+.career-content h3 {
+    color: #294b3b;
+
+    font-size: 22px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.career-content p {
+    color: #5d6963;
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    margin-bottom: 18px;
+}
+
+.career-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 強調メッセージ */
+
+.career-emphasis {
+    color: #2f6b50 !important;
+
+    font-size: 18px !important;
+
+    font-weight: 700;
+
+    line-height: 1.9 !important;
+
+    padding: 20px 25px;
+
+    background: #ffffff;
+
+    border-left: 4px solid #5e9978;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   CAREER - TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .career-timeline::before {
+        left: 95px;
+    }
+
+    .career-item {
+        grid-template-columns: 95px 1fr;
+
+        gap: 30px;
+
+        padding-bottom: 45px;
+    }
+
+    .career-year {
+        font-size: 14px;
+
+        padding-right: 28px;
+    }
+
+    .career-content {
+        padding: 25px 24px;
+    }
+
+    .career-content h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   CAREER - SMARTPHONE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .career-timeline::before {
+        left: 12px;
+    }
+
+    .career-item {
+        display: block;
+
+        padding-left: 35px;
+
+        padding-bottom: 35px;
+    }
+
+    .career-year {
+        text-align: left;
+
+        padding: 0;
+
+        margin-bottom: 12px;
+
+        font-size: 14px;
+    }
+
+    .career-year::after {
+        left: -28px;
+        right: auto;
+
+        top: 5px;
+    }
+
+    .career-content {
+        padding: 24px 20px;
+    }
+
+    .career-content h3 {
+        font-size: 19px;
+    }
+
+    .career-content p {
+        font-size: 14px;
+
+        line-height: 1.9;
+    }
+
+    .career-emphasis {
+        font-size: 16px !important;
+
+        padding: 17px 18px;
+    }
+
+}
