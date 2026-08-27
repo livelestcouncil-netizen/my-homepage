@@ -4081,3 +4081,599 @@ p {
     }
 
 }
+/* =========================================================
+   ORGANIZATION PAGE
+   人材育成・組織づくり
+   ========================================================= */
+
+/* PAGE HERO */
+
+.organization-page-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #f1f7f3 0%,
+            #ffffff 55%,
+            #edf5f0 100%
+        );
+
+    border-bottom: 1px solid #e2ebe5;
+
+    padding: 90px 0;
+}
+
+.organization-page-hero .container {
+    text-align: center;
+}
+
+.organization-page-hero h1 {
+    color: #203a30;
+
+    font-size: clamp(34px, 5vw, 54px);
+
+    line-height: 1.5;
+
+    letter-spacing: 0.04em;
+
+    margin-bottom: 25px;
+}
+
+.organization-page-hero p:not(.section-label) {
+    color: #586761;
+
+    font-size: 17px;
+
+    line-height: 2;
+}
+
+
+/* INTRO */
+
+.organization-intro {
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.organization-intro-text {
+    color: #586761;
+
+    font-size: 17px;
+
+    line-height: 2.2;
+
+    text-align: left;
+}
+
+
+/* PHILOSOPHY */
+
+.organization-philosophy {
+    background: #f5f8f6;
+}
+
+.organization-philosophy-box {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 55px 65px;
+
+    background: #ffffff;
+
+    border-left: 5px solid #4f8d6c;
+
+    border-radius: 8px;
+
+    box-shadow: 0 10px 30px rgba(42, 68, 55, 0.05);
+}
+
+.organization-philosophy-box h3 {
+    color: #294b3b;
+
+    font-size: 28px;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+}
+
+.organization-philosophy-box p {
+    color: #586761;
+
+    line-height: 2.1;
+}
+
+
+/* ICM */
+
+.icm-section {
+    background: #ffffff;
+}
+
+.icm-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.icm-content h3 {
+    color: #294b3b;
+
+    font-size: 28px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.icm-content p {
+    color: #5d6963;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+.icm-image {
+    background: #f5f8f6;
+
+    border: 1px solid #dfe8e2;
+
+    border-radius: 14px;
+
+    padding: 35px;
+}
+
+.icm-image img {
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+
+/* SURVEY FLOW */
+
+.organization-flow {
+    background: #f8faf9;
+}
+
+.organization-flow-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.organization-flow-card {
+    position: relative;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe8e2;
+
+    border-radius: 14px;
+
+    padding: 35px 30px;
+
+    box-shadow: 0 8px 25px rgba(42, 68, 55, 0.04);
+}
+
+.organization-flow-number {
+    color: #5e9978;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    margin-bottom: 15px;
+
+    display: block;
+}
+
+.organization-flow-card h3 {
+    color: #294b3b;
+
+    font-size: 21px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.organization-flow-card p {
+    color: #65726c;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    margin-bottom: 0;
+}
+
+
+/* WORKPLACE IMPROVEMENT */
+
+.organization-improvement {
+    background: #ffffff;
+}
+
+.organization-improvement-box {
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.organization-improvement-item {
+    background: #f5f8f6;
+
+    border-radius: 12px;
+
+    padding: 30px 25px;
+
+    border: 1px solid #e1e9e3;
+}
+
+.organization-improvement-item span {
+    color: #6ba082;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    display: block;
+
+    margin-bottom: 12px;
+}
+
+.organization-improvement-item h3 {
+    color: #294b3b;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    margin-bottom: 12px;
+}
+
+.organization-improvement-item p {
+    color: #65726c;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 0;
+}
+
+
+/* CARD SUPPORT */
+
+.card-support-section {
+    background: #f5f8f6;
+}
+
+.card-support-inner {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.card-support-content h3 {
+    color: #294b3b;
+
+    font-size: 28px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.card-support-content p {
+    color: #5d6963;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+.card-support-points {
+    margin-top: 25px;
+
+    display: grid;
+
+    gap: 12px;
+}
+
+.card-support-point {
+    background: #ffffff;
+
+    border: 1px solid #dfe8e2;
+
+    border-radius: 10px;
+
+    padding: 18px 20px;
+
+    color: #405148;
+
+    font-weight: 600;
+}
+
+.card-support-visual {
+    background: #ffffff;
+
+    border: 1px solid #dfe8e2;
+
+    border-radius: 16px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(42, 68, 55, 0.05);
+}
+
+.card-support-visual h4 {
+    color: #2f6b50;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.card-support-visual p {
+    color: #68746e;
+
+    line-height: 2;
+}
+
+
+/* SUPPORT EFFECT */
+
+.organization-result {
+    background: #ffffff;
+}
+
+.organization-result-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.organization-result-card {
+    padding: 35px 30px;
+
+    background: #f8faf9;
+
+    border: 1px solid #e1e9e3;
+
+    border-radius: 14px;
+
+    text-align: center;
+}
+
+.organization-result-card h3 {
+    color: #294b3b;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.organization-result-card p {
+    color: #65726c;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 0;
+}
+
+
+/* CLOSING */
+
+.organization-closing {
+    background:
+        linear-gradient(
+            135deg,
+            #2e644c,
+            #3d7a5c
+        );
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.organization-closing .section-label {
+    color: #c9e3d3;
+}
+
+.organization-closing h2 {
+    color: #ffffff;
+
+    font-size: clamp(30px, 4vw, 44px);
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.organization-closing p {
+    color: #e2eee7;
+
+    line-height: 2;
+
+    max-width: 720px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* LINK BUTTON */
+
+.organization-back {
+    text-align: center;
+
+    margin-top: 45px;
+}
+
+.organization-back a {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 12px 28px;
+
+    border: 1px solid #bfd2c6;
+
+    border-radius: 30px;
+
+    color: #2f6b50;
+
+    background: #ffffff;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.organization-back a:hover {
+    transform: translateY(-3px);
+
+    background: #f0f6f2;
+}
+
+
+/* =========================================================
+   ORGANIZATION PAGE - TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .icm-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .icm-image {
+        max-width: 650px;
+
+        margin: 0 auto;
+    }
+
+    .organization-flow-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .organization-improvement-box {
+        grid-template-columns: 1fr;
+    }
+
+    .card-support-inner {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .organization-result-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   ORGANIZATION PAGE - MOBILE
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    .organization-page-hero {
+        padding: 65px 0;
+    }
+
+    .organization-page-hero h1 {
+        font-size: 32px;
+
+        line-height: 1.5;
+    }
+
+    .organization-page-hero p:not(.section-label) {
+        font-size: 15px;
+
+        line-height: 2;
+    }
+
+    .organization-intro-text {
+        font-size: 15px;
+
+        line-height: 2;
+    }
+
+    .organization-philosophy-box {
+        padding: 35px 25px;
+    }
+
+    .organization-philosophy-box h3 {
+        font-size: 22px;
+    }
+
+    .icm-content h3 {
+        font-size: 23px;
+    }
+
+    .icm-image {
+        padding: 20px;
+    }
+
+    .organization-flow-card {
+        padding: 30px 24px;
+    }
+
+    .organization-improvement-item {
+        padding: 25px 22px;
+    }
+
+    .card-support-content h3 {
+        font-size: 23px;
+    }
+
+    .card-support-visual {
+        padding: 30px 22px;
+    }
+
+    .organization-closing h2 {
+        font-size: 30px;
+    }
+
+}
