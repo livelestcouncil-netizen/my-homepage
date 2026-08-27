@@ -3864,3 +3864,220 @@ p {
     }
 
 }
+/* =========================================
+   ORGANIZATION PAGE
+========================================= */
+
+.organization-introduction-text {
+    max-width: 760px;
+    margin: 50px auto 0;
+    line-height: 2;
+}
+
+.organization-introduction-text p {
+    margin-bottom: 25px;
+}
+
+
+/* ICM */
+
+.organization-icm-section {
+    background: #f7f9f8;
+}
+
+.organization-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.organization-text h3 {
+    font-size: 1.35rem;
+    margin-bottom: 25px;
+}
+
+.organization-text p {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.organization-image {
+    text-align: center;
+}
+
+.organization-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* 職場改善 */
+
+.workplace-improvement-section {
+    background: #ffffff;
+}
+
+.organization-list {
+    margin-top: 25px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.organization-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #dfe6e2;
+}
+
+.organization-list li::before {
+    content: "✓";
+    margin-right: 10px;
+}
+
+
+/* =========================================
+   CARD SUPPORT
+========================================= */
+
+.card-support-section {
+    background: #f1f7f5;
+}
+
+.card-support-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 55px auto 0;
+}
+
+.support-card {
+    background: #ffffff;
+    padding: 22px;
+    text-align: center;
+    border: 1px solid #e3ebe7;
+}
+
+.support-card img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.support-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.support-card p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.card-support-message {
+    max-width: 760px;
+    margin: 55px auto 0;
+    text-align: center;
+    line-height: 2;
+}
+
+.card-support-message p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.organization-process-section {
+    background: #ffffff;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 55px auto 0;
+}
+
+.process-card {
+    padding: 35px;
+    background: #f7f9f8;
+    border-top: 2px solid #4b9b70;
+}
+
+.process-number {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 25px;
+}
+
+.process-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.process-card p {
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .organization-two-column {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .organization-two-column.reverse .organization-image {
+        order: -1;
+    }
+
+    .card-support-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .support-card {
+        padding: 15px;
+    }
+
+    .support-card img {
+        max-width: 140px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .card-support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .organization-text h3 {
+        font-size: 1.2rem;
+    }
+
+}
