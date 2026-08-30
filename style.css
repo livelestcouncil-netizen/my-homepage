@@ -1,6 +1,7 @@
 /* =========================================================
    リベレスト社会保険労務士事務所
    Main Style Sheet
+   Unified Responsive Version
    ========================================================= */
 
 
@@ -71,6 +72,7 @@ p {
     z-index: 1000;
 
     background: rgba(255, 255, 255, 0.96);
+
     border-bottom: 1px solid #e8ece9;
 
     backdrop-filter: blur(10px);
@@ -98,21 +100,30 @@ p {
 .logo-main {
     font-size: 25px;
     font-weight: 700;
+
     letter-spacing: 0.08em;
     line-height: 1.2;
 }
 
 .logo-sub {
     font-size: 11px;
+
     letter-spacing: 0.16em;
+
     color: #68746e;
 
     margin-top: 4px;
 }
 
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
 .nav {
     display: flex;
     align-items: center;
+
     gap: 26px;
 
     font-size: 14px;
@@ -129,9 +140,11 @@ p {
 
 .nav-contact {
     background: #2f6b50;
+
     color: #ffffff !important;
 
     padding: 10px 20px;
+
     border-radius: 30px;
 
     transition:
@@ -141,6 +154,7 @@ p {
 
 .nav-contact:hover {
     background: #24563f;
+
     transform: translateY(-2px);
 }
 
@@ -151,6 +165,7 @@ p {
 
 .hero {
     position: relative;
+
     overflow: hidden;
 
     background:
@@ -168,6 +183,7 @@ p {
     content: "";
 
     position: absolute;
+
     width: 420px;
     height: 420px;
 
@@ -183,6 +199,7 @@ p {
     content: "";
 
     position: absolute;
+
     width: 250px;
     height: 250px;
 
@@ -198,6 +215,7 @@ p {
     min-height: 620px;
 
     display: grid;
+
     grid-template-columns: 1.05fr 0.95fr;
 
     align-items: center;
@@ -205,6 +223,7 @@ p {
     gap: 60px;
 
     position: relative;
+
     z-index: 1;
 }
 
@@ -216,6 +235,7 @@ p {
     display: inline-block;
 
     color: #397056;
+
     font-size: 14px;
     font-weight: 700;
 
@@ -228,6 +248,7 @@ p {
     color: #203a30;
 
     font-size: clamp(40px, 5vw, 66px);
+
     line-height: 1.35;
 
     letter-spacing: 0.04em;
@@ -241,15 +262,10 @@ p {
     color: #586761;
 
     font-size: 17px;
+
     line-height: 2.1;
 
     margin-bottom: 38px;
-}
-
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
 }
 
 
@@ -259,24 +275,27 @@ p {
 
 .hero-photo {
     width: 100%;
+
     max-width: 620px;
+
     margin-left: auto;
 
     border-radius: 18px;
+
     overflow: hidden;
 
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
-
-    background: #eef4f0;
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.12);
 }
 
 .hero-photo img {
     display: block;
 
     width: 100%;
+
     height: auto;
 
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
 
     object-fit: cover;
 }
@@ -285,6 +304,14 @@ p {
 /* =========================================================
    BUTTON
    ========================================================= */
+
+.hero-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+}
 
 .button {
     display: inline-flex;
@@ -299,12 +326,14 @@ p {
     border-radius: 30px;
 
     font-weight: 700;
+
     font-size: 14px;
 
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease,
-        background 0.25s ease;
+        background 0.25s ease,
+        border-color 0.25s ease;
 }
 
 .button:hover {
@@ -313,18 +342,23 @@ p {
 
 .button-primary {
     background: #2f6b50;
+
     color: #ffffff;
 
-    box-shadow: 0 8px 20px rgba(47, 107, 80, 0.18);
+    box-shadow:
+        0 8px 20px rgba(47, 107, 80, 0.18);
 }
 
 .button-primary:hover {
     background: #24563f;
-    box-shadow: 0 12px 24px rgba(47, 107, 80, 0.24);
+
+    box-shadow:
+        0 12px 24px rgba(47, 107, 80, 0.24);
 }
 
 .button-secondary {
     background: #ffffff;
+
     color: #2f6b50;
 
     border: 1px solid #bfd2c6;
@@ -345,6 +379,7 @@ p {
     min-height: 330px;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
@@ -358,7 +393,8 @@ p {
 
     border-radius: 50%;
 
-    box-shadow: 0 20px 50px rgba(42, 71, 58, 0.08);
+    box-shadow:
+        0 20px 50px rgba(42, 71, 58, 0.08);
 
     padding: 50px;
 }
@@ -367,6 +403,7 @@ p {
     color: #2f6b50;
 
     font-size: 22px;
+
     font-weight: 700;
 
     line-height: 1.8;
@@ -378,6 +415,7 @@ p {
     color: #66736c;
 
     font-size: 14px;
+
     line-height: 1.8;
 }
 
@@ -402,6 +440,7 @@ p {
     color: #4a8b6a;
 
     font-size: 12px;
+
     font-weight: 800;
 
     letter-spacing: 0.18em;
@@ -481,6 +520,7 @@ p {
     border-radius: 12px;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: space-between;
@@ -493,13 +533,15 @@ p {
 .problem-item:hover {
     transform: translateY(-4px);
 
-    box-shadow: 0 12px 30px rgba(43, 70, 57, 0.08);
+    box-shadow:
+        0 12px 30px rgba(43, 70, 57, 0.08);
 }
 
 .problem-item span {
     color: #6ca183;
 
     font-size: 12px;
+
     font-weight: 800;
 
     letter-spacing: 0.12em;
@@ -582,7 +624,8 @@ p {
 
     border-radius: 14px;
 
-    box-shadow: 0 8px 25px rgba(42, 68, 55, 0.04);
+    box-shadow:
+        0 8px 25px rgba(42, 68, 55, 0.04);
 }
 
 .strength-card .number {
@@ -591,6 +634,7 @@ p {
     color: #5e9978;
 
     font-size: 13px;
+
     font-weight: 800;
 
     letter-spacing: 0.12em;
@@ -631,10 +675,16 @@ p {
     gap: 20px;
 }
 
+.service-card-link {
+    display: block;
+
+    height: 100%;
+}
+
 .service-card {
     position: relative;
 
-    display: block;
+    height: 100%;
 
     padding: 35px 30px 32px;
 
@@ -648,8 +698,6 @@ p {
         transform 0.25s ease,
         box-shadow 0.25s ease,
         border-color 0.25s ease;
-
-    min-height: 205px;
 }
 
 .service-card:hover {
@@ -657,18 +705,15 @@ p {
 
     border-color: #b6d0c0;
 
-    box-shadow: 0 15px 35px rgba(43, 70, 57, 0.08);
-}
-
-.service-card:focus-visible {
-    outline: 3px solid rgba(47, 107, 80, 0.25);
-    outline-offset: 3px;
+    box-shadow:
+        0 15px 35px rgba(43, 70, 57, 0.08);
 }
 
 .service-number {
     color: #6ba082;
 
     font-size: 12px;
+
     font-weight: 800;
 
     letter-spacing: 0.1em;
@@ -691,7 +736,19 @@ p {
 
     line-height: 1.9;
 
-    margin: 0;
+    margin: 0 0 18px;
+}
+
+.service-more {
+    display: inline-block;
+
+    color: #2f6b50;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-top: 8px;
 }
 
 
@@ -740,20 +797,13 @@ p {
     align-items: center;
 
     text-align: center;
-
-    overflow: hidden;
-}
-
-.photo-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .photo-placeholder span {
     color: #4f8065;
 
     font-size: 15px;
+
     font-weight: 800;
 
     letter-spacing: 0.15em;
@@ -775,6 +825,7 @@ p {
     color: #294b3b;
 
     font-size: 28px;
+
     font-weight: 700;
 
     margin-bottom: 25px;
@@ -902,6 +953,7 @@ p {
     color: #ffffff;
 
     font-size: 22px;
+
     font-weight: 700;
 
     letter-spacing: 0.08em;
@@ -927,35 +979,36 @@ p {
 
 
 /* =========================================================
-   DETAIL PAGE
+   REPRESENTATIVE PAGE
    ========================================================= */
 
-.page-hero {
+.representative-page-hero {
     background:
         linear-gradient(
             135deg,
-            #f1f7f3 0%,
-            #ffffff 100%
+            #eef6f1,
+            #ffffff,
+            #edf5f0
         );
 
-    padding: 105px 0 90px;
+    text-align: center;
+
+    padding: 90px 0 85px;
 
     border-bottom: 1px solid #e2ebe5;
 }
 
-.page-hero h1 {
-    color: #203a30;
+.representative-page-hero h1 {
+    color: #263c32;
 
     font-size: clamp(36px, 5vw, 56px);
 
     line-height: 1.4;
 
-    letter-spacing: 0.04em;
-
     margin-bottom: 22px;
 }
 
-.page-hero p:not(.section-label) {
+.representative-page-hero > .container > p:last-child {
     color: #586761;
 
     font-size: 17px;
@@ -963,160 +1016,654 @@ p {
     line-height: 2;
 }
 
-.content-narrow {
-    width: min(820px, 100%);
+
+/* =========================================================
+   REPRESENTATIVE PROFILE PAGE
+   ========================================================= */
+
+.representative-profile {
+    background: #ffffff;
+}
+
+.representative-profile-inner {
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.25fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.representative-profile-photo {
+    width: 100%;
+
+    max-width: 380px;
 
     margin: 0 auto;
 }
 
-.content-narrow h2 {
-    color: #263c32;
+.representative-profile-photo img {
+    width: 100%;
 
-    font-size: clamp(29px, 4vw, 40px);
+    height: auto;
 
-    line-height: 1.55;
+    border-radius: 14px;
 
-    margin-bottom: 32px;
+    box-shadow:
+        0 18px 40px rgba(42, 68, 55, 0.12);
 }
 
-.content-narrow p {
-    color: #586761;
+.representative-profile-content h2 {
+    color: #294b3b;
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+.representative-title {
+    color: #4f8065;
+
+    font-weight: 700;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.representative-profile-content > p:not(.section-label):not(.representative-title) {
+    color: #5d6963;
+
+    line-height: 2;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   REPRESENTATIVE MESSAGE
+   ========================================================= */
+
+.representative-message {
+    background: #f5f8f6;
+}
+
+.representative-message-box {
+    background: #ffffff;
+
+    padding: 55px 60px;
+
+    border-left: 5px solid #4f8d6c;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 30px rgba(42, 68, 55, 0.05);
+}
+
+.representative-message-box h3 {
+    color: #294b3b;
+
+    font-size: 27px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.representative-message-box p {
+    color: #5d6963;
 
     line-height: 2.1;
 
     margin-bottom: 22px;
 }
 
-.section-light {
-    background: #f5f8f6;
+.representative-message-box p:last-child {
+    margin-bottom: 0;
 }
 
-.feature-grid {
+
+/* =========================================================
+   QUALIFICATION
+   ========================================================= */
+
+.qualification-section {
+    background: #ffffff;
+}
+
+.qualification-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 22px;
 }
 
-.feature-card {
-    background: #ffffff;
+.qualification-card {
+    background: #f7faf8;
 
-    padding: 35px;
+    padding: 35px 30px;
 
-    border: 1px solid #e0e8e3;
+    border: 1px solid #e0e9e3;
 
-    border-radius: 14px;
-
-    box-shadow: 0 7px 24px rgba(42, 68, 55, 0.04);
+    border-radius: 12px;
 }
 
-.feature-card h3 {
+.qualification-card > span {
+    display: block;
+
+    color: #6a9b80;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    margin-bottom: 12px;
+}
+
+.qualification-card h3 {
     color: #294b3b;
 
     font-size: 21px;
 
     line-height: 1.6;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.feature-card p {
-    color: #65726c;
-
-    font-size: 15px;
-
-    line-height: 2;
-
-    margin: 0;
+.qualification-list {
+    list-style: none;
 }
 
-.flow-list {
-    width: min(900px, 100%);
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 25px;
-}
-
-.flow-item {
+.qualification-list li {
     position: relative;
 
-    padding: 32px;
+    color: #5e6b64;
 
-    background: #ffffff;
+    line-height: 1.8;
 
-    border: 1px solid #dfe8e2;
+    padding-left: 18px;
 
-    border-radius: 14px;
+    margin-bottom: 9px;
 }
 
-.flow-item span {
-    color: #5e9978;
+.qualification-list li::before {
+    content: "・";
 
-    font-size: 12px;
+    position: absolute;
+
+    left: 0;
+
+    color: #4f8d6c;
+}
+
+
+/* =========================================================
+   CAREER
+   ========================================================= */
+
+.career-section {
+    background: #f8faf9;
+}
+
+.career-timeline {
+    max-width: 950px;
+
+    margin: 0 auto;
+}
+
+.career-item {
+    display: grid;
+
+    grid-template-columns: 170px 1fr;
+
+    gap: 45px;
+
+    position: relative;
+
+    padding-bottom: 55px;
+}
+
+.career-item:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    left: 84px;
+
+    top: 45px;
+
+    bottom: 0;
+
+    width: 1px;
+
+    background: #cddbd2;
+}
+
+.career-year {
+    position: relative;
+
+    color: #397056;
+
+    font-size: 17px;
 
     font-weight: 800;
 
-    letter-spacing: 0.15em;
+    line-height: 1.6;
+
+    text-align: right;
+
+    padding-top: 3px;
 }
 
-.flow-item h3 {
+.career-year::after {
+    content: "";
+
+    position: absolute;
+
+    top: 9px;
+
+    right: -51px;
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #4f8d6c;
+
+    border: 3px solid #f8faf9;
+
+    box-shadow: 0 0 0 1px #9dbbaa;
+
+    z-index: 2;
+}
+
+.career-year span {
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.career-content {
+    background: #ffffff;
+
+    padding: 35px 40px;
+
+    border: 1px solid #e0e8e2;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 7px 22px rgba(42, 68, 55, 0.04);
+}
+
+.career-label {
+    display: inline-block;
+
+    color: #5d9776;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    margin-bottom: 10px;
+}
+
+.career-content h3 {
     color: #294b3b;
+
+    font-size: 23px;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+.career-content p {
+    color: #5e6b64;
+
+    line-height: 2;
+
+    margin-bottom: 18px;
+}
+
+.career-content p:last-child {
+    margin-bottom: 0;
+}
+
+.career-emphasis {
+    color: #2f6b50 !important;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.9 !important;
+
+    padding: 18px 20px;
+
+    background: #f1f7f3;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   REPRESENTATIVE CLOSING
+   ========================================================= */
+
+.representative-closing-section {
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.representative-closing {
+    padding: 30px 0;
+}
+
+.representative-closing h2 {
+    color: #294b3b;
+
+    font-size: clamp(30px, 4vw, 43px);
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.representative-closing > p:not(.section-label):not(.closing-emphasis) {
+    color: #5e6b64;
+
+    font-size: 17px;
+
+    line-height: 2.1;
+
+    margin-bottom: 30px;
+}
+
+.closing-emphasis {
+    color: #2f6b50;
 
     font-size: 20px;
 
-    margin: 12px 0 12px;
+    font-weight: 700;
+
+    line-height: 2;
+
+    margin-bottom: 0;
 }
 
-.flow-item p {
-    color: #65726c;
 
-    font-size: 14px;
+/* =========================================================
+   REPRESENTATIVE SPECIALTY
+   ========================================================= */
 
-    line-height: 1.9;
-
-    margin: 0;
-}
-
-.cta-section {
+.representative-specialty {
     background: #f5f8f6;
 }
 
-.cta-box {
-    max-width: 850px;
+.representative-specialty-inner {
+    display: grid;
 
-    margin: 0 auto;
+    grid-template-columns: 0.8fr 1.2fr;
 
-    padding: 60px 50px;
+    gap: 70px;
 
-    background: #ffffff;
-
-    border: 1px solid #dfe8e2;
-
-    border-radius: 18px;
-
-    text-align: center;
-
-    box-shadow: 0 10px 35px rgba(42, 68, 55, 0.05);
+    align-items: start;
 }
 
-.cta-box h2 {
+.representative-specialty-inner h2 {
     color: #294b3b;
 
-    font-size: clamp(28px, 4vw, 40px);
+    font-size: clamp(30px, 4vw, 42px);
 
-    line-height: 1.55;
+    line-height: 1.6;
+}
+
+.representative-specialty-inner > div:last-child p {
+    color: #5e6b64;
+
+    line-height: 2.1;
+
+    margin-bottom: 22px;
+}
+
+.representative-specialty-inner > div:last-child p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+   ========================================================= */
+
+.philosophy-section {
+    background: #ffffff;
+}
+
+.philosophy-box {
+    text-align: center;
+
+    padding: 55px 45px;
+
+    background: #f5f8f6;
+
+    border-radius: 12px;
+
+    border: 1px solid #e0e9e3;
+}
+
+.philosophy-main {
+    color: #2f6b50;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    margin-bottom: 30px;
+}
+
+.philosophy-box p:not(.philosophy-main) {
+    color: #5e6b64;
+
+    line-height: 2.1;
 
     margin-bottom: 20px;
 }
 
-.cta-box p:not(.section-label) {
-    color: #65726c;
+.philosophy-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SERVICE DETAIL COMMON
+   ========================================================= */
+
+/*
+   以下は 01～06 の詳細ページで
+   共通して使用できるデザインです。
+*/
+
+.service-page-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #eef6f1,
+            #ffffff,
+            #edf5f0
+        );
+
+    text-align: center;
+
+    padding: 90px 0 85px;
+
+    border-bottom: 1px solid #e2ebe5;
+}
+
+.service-page-hero h1 {
+    color: #263c32;
+
+    font-size: clamp(34px, 5vw, 54px);
+
+    line-height: 1.45;
+
+    margin-bottom: 20px;
+}
+
+.service-page-hero p {
+    color: #586761;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 0;
+}
+
+.service-detail {
+    background: #ffffff;
+}
+
+.service-detail-box {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.service-detail-box h2 {
+    color: #294b3b;
+
+    font-size: 30px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.service-detail-box h3 {
+    color: #355343;
+
+    font-size: 22px;
+
+    line-height: 1.7;
+
+    margin: 35px 0 15px;
+}
+
+.service-detail-box p {
+    color: #5e6b64;
+
+    line-height: 2.1;
+
+    margin-bottom: 20px;
+}
+
+.service-detail-box ul {
+    margin: 20px 0 30px;
+
+    padding-left: 1.5em;
+}
+
+.service-detail-box li {
+    color: #5e6b64;
+
+    line-height: 2;
+
+    margin-bottom: 8px;
+}
+
+.service-detail-photo {
+    margin: 45px auto;
+
+    max-width: 900px;
+}
+
+.service-detail-photo img {
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 12px 30px rgba(42, 68, 55, 0.08);
+}
+
+.service-back {
+    text-align: center;
+
+    margin-top: 55px;
+}
+
+.service-back a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 10px 25px;
+
+    border: 1px solid #bfd2c6;
+
+    border-radius: 30px;
+
+    color: #2f6b50;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.service-back a:hover {
+    background: #f2f7f4;
+
+    border-color: #2f6b50;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SERVICE CTA
+   ========================================================= */
+
+.service-cta {
+    background: #f5f8f6;
+
+    text-align: center;
+
+    padding: 85px 0;
+}
+
+.service-cta h2 {
+    color: #294b3b;
+
+    font-size: clamp(28px, 4vw, 40px);
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.service-cta p {
+    color: #5e6b64;
 
     line-height: 2;
 
@@ -1125,17 +1672,171 @@ p {
 
 
 /* =========================================================
-   RESPONSIVE - TABLET
+   ICM / ORGANIZATION PAGE
    ========================================================= */
 
-@media (max-width: 900px) {
+.icm-section {
+    background: #f5f8f6;
+}
 
-    .header-inner {
-        gap: 20px;
-    }
+.icm-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+
+    align-items: center;
+}
+
+.icm-image {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+.icm-image img {
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 12px 30px rgba(42, 68, 55, 0.08);
+}
+
+.icm-content h3 {
+    color: #294b3b;
+
+    font-size: 25px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.icm-content p {
+    color: #5e6b64;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CARD IMAGE SECTION
+   ========================================================= */
+
+.card-image-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-top: 35px;
+}
+
+.card-image-item {
+    background: #ffffff;
+
+    border: 1px solid #e0e8e2;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 7px 20px rgba(42, 68, 55, 0.04);
+}
+
+.card-image-item img {
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+
+    margin-bottom: 12px;
+}
+
+.card-image-item p {
+    color: #4f665a;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   WORKPLACE IMPROVEMENT
+   ========================================================= */
+
+.workplace-section {
+    background: #ffffff;
+}
+
+.workplace-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+.workplace-image img {
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 12px 30px rgba(42, 68, 55, 0.08);
+}
+
+.workplace-content h3 {
+    color: #294b3b;
+
+    font-size: 25px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.workplace-content p {
+    color: #5e6b64;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
 
     .nav {
-        gap: 14px;
+        gap: 16px;
 
         font-size: 12px;
     }
@@ -1143,7 +1844,7 @@ p {
     .hero-inner {
         grid-template-columns: 1fr;
 
-        gap: 35px;
+        gap: 45px;
 
         padding: 70px 0;
     }
@@ -1164,16 +1865,9 @@ p {
     }
 
     .hero-photo {
+        margin: 0 auto;
+
         max-width: 700px;
-        margin: 0 auto;
-    }
-
-    .hero-message {
-        width: min(420px, 100%);
-
-        min-height: 300px;
-
-        margin: 0 auto;
     }
 
     .problem-grid {
@@ -1204,16 +1898,61 @@ p {
         text-align: center;
     }
 
-    .feature-grid,
-    .flow-list {
-        grid-template-columns: 1fr 1fr;
+    .representative-profile-inner {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
     }
 
+    .representative-profile-photo {
+        max-width: 360px;
+    }
+
+    .representative-profile-content {
+        text-align: center;
+    }
+
+    .qualification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .representative-specialty-inner {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .representative-specialty-inner > div:first-child {
+        text-align: center;
+    }
+
+    .icm-grid,
+    .workplace-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .icm-image {
+        order: 1;
+    }
+
+    .icm-content {
+        order: 2;
+    }
+
+    .workplace-image {
+        order: 1;
+    }
+
+    .workplace-content {
+        order: 2;
+    }
 }
 
 
 /* =========================================================
-   RESPONSIVE - MOBILE
+   MOBILE
    ========================================================= */
 
 @media (max-width: 680px) {
@@ -1224,32 +1963,42 @@ p {
 
     .container,
     .container.narrow {
-        width: calc(100% - 32px);
+        width: min(100% - 32px, 600px);
     }
 
+    /* HEADER */
+
     .header-inner {
-        min-height: 68px;
+        min-height: 70px;
     }
 
     .logo-main {
-        font-size: 19px;
-
-        letter-spacing: 0.05em;
+        font-size: 20px;
     }
 
     .logo-sub {
-        font-size: 8px;
-
-        letter-spacing: 0.12em;
+        font-size: 9px;
     }
 
     .nav {
         display: none;
     }
 
+
+    /* SECTION */
+
     .section {
         padding: 75px 0;
     }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section h2 {
+        font-size: 29px;
+    }
+
 
     /* HERO */
 
@@ -1260,12 +2009,13 @@ p {
     .hero-inner {
         min-height: auto;
 
-        padding: 55px 0 65px;
-
         display: flex;
+
         flex-direction: column;
 
         gap: 35px;
+
+        padding: 65px 0 70px;
     }
 
     .hero-content {
@@ -1279,7 +2029,7 @@ p {
     .hero-label {
         font-size: 12px;
 
-        margin-bottom: 16px;
+        margin-bottom: 18px;
     }
 
     .hero h1 {
@@ -1287,7 +2037,7 @@ p {
 
         line-height: 1.5;
 
-        margin-bottom: 22px;
+        margin-bottom: 25px;
     }
 
     .hero-text {
@@ -1295,13 +2045,11 @@ p {
 
         line-height: 2;
 
-        margin-bottom: 28px;
+        margin-bottom: 30px;
     }
 
     .hero-buttons {
         flex-direction: column;
-
-        align-items: stretch;
 
         gap: 12px;
 
@@ -1323,64 +2071,33 @@ p {
     }
 
     .hero-photo img {
-        aspect-ratio: 4 / 3;
-
-        object-fit: cover;
+        aspect-ratio: 16 / 9;
     }
 
-    /* BUTTON */
-
-    .button {
-        width: 100%;
-
-        min-height: 54px;
-
-        padding: 13px 20px;
-
-        font-size: 14px;
-    }
 
     /* HERO MESSAGE */
 
     .hero-message {
         width: 100%;
 
-        min-height: 250px;
+        min-height: 270px;
 
-        padding: 35px 25px;
-
-        border-radius: 30px;
+        padding: 40px 30px;
     }
 
     .hero-message p {
-        font-size: 18px;
+        font-size: 19px;
     }
 
-    .hero-message span {
-        font-size: 13px;
-    }
 
-    /* SECTION */
-
-    .section h2 {
-        font-size: 29px;
-
-        line-height: 1.55;
-    }
-
-    .section-heading {
-        margin-bottom: 40px;
-    }
-
-    .section-label {
-        font-size: 11px;
-    }
+    /* INTRODUCTION */
 
     .lead-text {
         font-size: 15px;
 
         line-height: 2;
     }
+
 
     /* PROBLEM */
 
@@ -1396,6 +2113,7 @@ p {
         padding: 20px;
     }
 
+
     /* ABOUT */
 
     .about-box {
@@ -1404,17 +2122,10 @@ p {
 
     .about-box h3 {
         font-size: 22px;
-
-        line-height: 1.65;
     }
+
 
     /* STRENGTH */
-
-    .strength-grid {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
 
     .strength-card {
         padding: 32px 25px;
@@ -1424,23 +2135,19 @@ p {
         font-size: 21px;
     }
 
+
     /* SERVICE */
 
     .service-grid {
         grid-template-columns: 1fr;
 
-        gap: 14px;
+        gap: 15px;
     }
 
     .service-card {
-        min-height: auto;
-
-        padding: 28px 24px;
+        padding: 30px 24px;
     }
 
-    .service-card h3 {
-        font-size: 19px;
-    }
 
     /* REPRESENTATIVE */
 
@@ -1452,9 +2159,6 @@ p {
         font-size: 25px;
     }
 
-    .representative-content {
-        text-align: left;
-    }
 
     /* OFFICE */
 
@@ -1463,22 +2167,24 @@ p {
     }
 
     .office-label {
-        padding: 14px 18px;
+        padding: 15px 18px;
 
         font-size: 14px;
     }
 
     .office-value {
-        padding: 17px 18px;
+        padding: 18px;
 
         font-size: 14px;
     }
 
+
     /* CONTACT */
 
     .contact-section h2 {
-        font-size: 31px;
+        font-size: 32px;
     }
+
 
     /* FOOTER */
 
@@ -1486,76 +2192,213 @@ p {
         flex-direction: column;
 
         align-items: flex-start;
-
-        gap: 20px;
     }
 
     .footer-copy {
         text-align: left;
     }
 
-    /* DETAIL PAGE */
 
-    .page-hero {
-        padding: 70px 0 60px;
+    /* REPRESENTATIVE PAGE */
+
+    .representative-page-hero {
+        padding: 65px 0 60px;
     }
 
-    .page-hero h1 {
-        font-size: 34px;
-
-        line-height: 1.5;
+    .representative-page-hero h1 {
+        font-size: 36px;
     }
 
-    .page-hero p:not(.section-label) {
+    .representative-page-hero > .container > p:last-child {
         font-size: 15px;
-
-        line-height: 2;
     }
 
-    .content-narrow h2 {
-        font-size: 28px;
-
-        line-height: 1.6;
+    .representative-profile-inner {
+        gap: 35px;
     }
 
-    .content-narrow p {
-        font-size: 15px;
-
-        line-height: 2;
+    .representative-profile-photo {
+        max-width: 300px;
     }
 
-    .feature-grid {
+    .representative-profile-content h2 {
+        font-size: 30px;
+    }
+
+    .representative-message-box {
+        padding: 35px 25px;
+    }
+
+    .representative-message-box h3 {
+        font-size: 22px;
+    }
+
+
+    /* QUALIFICATION */
+
+    .qualification-card {
+        padding: 30px 25px;
+    }
+
+
+    /* CAREER */
+
+    .career-item {
         grid-template-columns: 1fr;
 
-        gap: 14px;
+        gap: 12px;
+
+        padding-bottom: 35px;
     }
 
-    .feature-card {
+    .career-item:not(:last-child)::after {
+        display: none;
+    }
+
+    .career-year {
+        text-align: left;
+
+        padding-left: 20px;
+
+        font-size: 16px;
+    }
+
+    .career-year::after {
+        top: 8px;
+
+        left: 0;
+
+        right: auto;
+
+        width: 10px;
+
+        height: 10px;
+    }
+
+    .career-content {
         padding: 28px 24px;
     }
 
-    .feature-card h3 {
-        font-size: 19px;
+    .career-content h3 {
+        font-size: 21px;
     }
 
-    .flow-list {
+    .career-content p {
+        line-height: 1.95;
+    }
+
+    .career-emphasis {
+        font-size: 16px;
+    }
+
+
+    /* CLOSING */
+
+    .representative-closing h2 {
+        font-size: 29px;
+    }
+
+    .representative-closing > p:not(.section-label):not(.closing-emphasis) {
+        font-size: 15px;
+    }
+
+    .closing-emphasis {
+        font-size: 18px;
+    }
+
+
+    /* SPECIALTY */
+
+    .representative-specialty-inner h2 {
+        font-size: 29px;
+    }
+
+
+    /* PHILOSOPHY */
+
+    .philosophy-box {
+        padding: 40px 25px;
+    }
+
+    .philosophy-main {
+        font-size: 24px;
+    }
+
+
+    /* SERVICE DETAIL */
+
+    .service-page-hero {
+        padding: 65px 0 60px;
+    }
+
+    .service-page-hero h1 {
+        font-size: 32px;
+    }
+
+    .service-page-hero p {
+        font-size: 15px;
+    }
+
+    .service-detail-box h2 {
+        font-size: 26px;
+    }
+
+    .service-detail-box h3 {
+        font-size: 21px;
+    }
+
+    .service-detail-box p {
+        line-height: 2;
+    }
+
+    .service-detail-photo {
+        margin: 30px auto;
+    }
+
+    .service-back {
+        margin-top: 40px;
+    }
+
+
+    /* SERVICE CTA */
+
+    .service-cta {
+        padding: 70px 0;
+    }
+
+    .service-cta h2 {
+        font-size: 28px;
+    }
+
+
+    /* ICM */
+
+    .icm-content h3 {
+        font-size: 22px;
+    }
+
+    .icm-content p {
+        line-height: 2;
+    }
+
+
+    /* CARDS */
+
+    .card-image-grid {
         grid-template-columns: 1fr;
 
-        gap: 14px;
+        gap: 15px;
     }
 
-    .flow-item {
-        padding: 27px 24px;
+    .card-image-item {
+        padding: 15px;
     }
 
-    .cta-box {
-        padding: 42px 24px;
 
-        border-radius: 14px;
-    }
+    /* WORKPLACE */
 
-    .cta-box h2 {
-        font-size: 27px;
+    .workplace-content h3 {
+        font-size: 22px;
     }
 
 }
@@ -1572,3108 +2415,24 @@ p {
         width: calc(100% - 28px);
     }
 
-    .logo-main {
-        font-size: 17px;
-    }
-
     .hero h1 {
         font-size: 31px;
     }
 
     .hero-message {
-        min-height: 235px;
+        min-height: 245px;
     }
 
     .hero-message p {
         font-size: 17px;
     }
 
-    .section {
-        padding: 65px 0;
-    }
-
-    .cta-box {
-        padding: 35px 20px;
-    }
-
-}
-/* =========================================================
-   REPRESENTATIVE PAGE
-   ========================================================= */
-
-.representative-page-hero {
-    background: linear-gradient(
-        135deg,
-        #f1f7f3 0%,
-        #ffffff 60%,
-        #edf5f0 100%
-    );
-
-    padding: 90px 0;
-
-    text-align: center;
-
-    border-bottom: 1px solid #e2ebe5;
-}
-
-.representative-page-hero h1 {
-    color: #263c32;
-
-    font-size: clamp(36px, 5vw, 52px);
-
-    line-height: 1.4;
-
-    margin-bottom: 20px;
-}
-
-.representative-page-hero p:last-child {
-    color: #68756f;
-
-    font-size: 17px;
-
-    margin-bottom: 0;
-}
-
-
-/* =========================
-   REPRESENTATIVE PROFILE
-========================= */
-
-.representative-profile {
-    background: #ffffff;
-}
-
-.representative-profile-grid {
-    display: grid;
-
-    grid-template-columns: 320px 1fr;
-
-    gap: 75px;
-
-    align-items: center;
-
-    max-width: 980px;
-
-    margin: 0 auto;
-}
-
-.representative-profile-image {
-    width: 320px;
-
-    margin: 0 auto;
-}
-
-.representative-profile-image img {
-    width: 100%;
-
-    height: auto;
-
-    display: block;
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 15px 35px rgba(42, 68, 55, 0.12);
-}
-
-.representative-profile-content h2 {
-    color: #294b3b;
-
-    font-size: 32px;
-
-    line-height: 1.5;
-
-    margin-bottom: 8px;
-}
-
-.representative-position {
-    color: #68746e;
-
-    font-size: 14px;
-
-    margin-bottom: 30px;
-}
-
-.profile-message {
-    color: #5d6963;
-
-    line-height: 2;
-
-    font-size: 16px;
-}
-
-.profile-message p {
-    margin-bottom: 20px;
-}
-
-.profile-message p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================
-   PHILOSOPHY
-========================= */
-
-.representative-philosophy {
-    background: #f5f8f6;
-}
-
-.philosophy-box {
-    background: #ffffff;
-
-    padding: 55px 65px;
-
-    border-left: 5px solid #4f8d6c;
-
-    border-radius: 8px;
-
-    box-shadow: 0 8px 25px rgba(42, 68, 55, 0.04);
-}
-
-.philosophy-box h3 {
-    color: #294b3b;
-
-    font-size: 27px;
-
-    line-height: 1.7;
-
-    margin-bottom: 30px;
-}
-
-.philosophy-box p {
-    color: #586761;
-
-    line-height: 2.1;
-
-    margin-bottom: 20px;
-}
-
-.philosophy-box p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================
-   APPROACH
-========================= */
-
-.representative-service {
-    background: #ffffff;
-}
-
-.approach-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 20px;
-
-    max-width: 900px;
-
-    margin: 0 auto;
-}
-
-.approach-card {
-    padding: 35px 32px;
-
-    background: #ffffff;
-
-    border: 1px solid #dfe8e2;
-
-    border-radius: 12px;
-
-    box-shadow: 0 8px 25px rgba(42, 68, 55, 0.04);
-}
-
-.approach-card > span {
-    color: #6ba082;
-
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.1em;
-}
-
-.approach-card h3 {
-    color: #2c493b;
-
-    font-size: 20px;
-
-    line-height: 1.6;
-
-    margin: 13px 0 14px;
-}
-
-.approach-card p {
-    color: #68746e;
-
-    font-size: 14px;
-
-    line-height: 1.9;
-
-    margin: 0;
-}
-
-
-/* =========================
-   PEOPLE
-========================= */
-
-.representative-people {
-    background: #f8faf9;
-}
-
-.people-message {
-    color: #586761;
-
-    font-size: 17px;
-
-    line-height: 2.1;
-
-    text-align: center;
-}
-
-.people-message p {
-    margin-bottom: 24px;
-}
-
-.people-message p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================
-   REPRESENTATIVE MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    .representative-page-hero {
-        padding: 65px 0;
-    }
-
-    .representative-page-hero h1 {
-        font-size: 36px;
-    }
-
-    .representative-page-hero p:last-child {
-        font-size: 15px;
-    }
-
-    .representative-profile-grid {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-
-        text-align: center;
-    }
-
-    .representative-profile-image {
-        width: min(280px, 80%);
-
-        margin: 0 auto;
-    }
-
-    .representative-profile-content h2 {
-        font-size: 28px;
-    }
-
-    .profile-message {
-        text-align: left;
-
-        font-size: 15px;
-    }
-
-    .philosophy-box {
-        padding: 35px 25px;
-    }
-
-    .philosophy-box h3 {
-        font-size: 22px;
-    }
-
-    .approach-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .approach-card {
-        padding: 30px 24px;
-    }
-
-    .people-message {
-        text-align: left;
-
-        font-size: 15px;
-    }
-
-}
-/* =========================================================
-   REPRESENTATIVE PAGE
-   ========================================================= */
-
-.representative-page-hero {
-    padding: 90px 0 85px;
-    background:
-        linear-gradient(
-            135deg,
-            #f1f7f3 0%,
-            #ffffff 60%,
-            #edf5f0 100%
-        );
-    border-bottom: 1px solid #e2ebe5;
-}
-
-.representative-page-hero h1 {
-    color: #263c32;
-    font-size: clamp(36px, 5vw, 54px);
-    line-height: 1.4;
-    margin-bottom: 20px;
-}
-
-.representative-page-hero > div > p:last-child {
-    color: #5f6e67;
-    font-size: 18px;
-    line-height: 2;
-}
-
-
-/* PROFILE */
-
-.representative-profile {
-    background: #ffffff;
-}
-
-.representative-profile-inner {
-    display: grid;
-    grid-template-columns: 0.72fr 1.28fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.representative-profile-photo {
-    width: min(360px, 100%);
-    margin: 0 auto;
-}
-
-.representative-profile-photo img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 14px;
-    box-shadow: 0 18px 45px rgba(42, 68, 55, 0.12);
-}
-
-.representative-profile-content h2 {
-    color: #294b3b;
-    font-size: 34px;
-    line-height: 1.5;
-    margin-bottom: 8px;
-}
-
-.representative-title {
-    color: #4f8065;
-    font-weight: 700;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-.representative-profile-content > p:not(.section-label):not(.representative-title) {
-    color: #5d6963;
-    line-height: 2.05;
-}
-
-
-/* MESSAGE */
-
-.representative-message {
-    background: #f5f8f6;
-}
-
-.representative-message-box {
-    background: #ffffff;
-    padding: 55px 65px;
-    border-left: 5px solid #4f8d6c;
-    border-radius: 8px;
-}
-
-.representative-message-box h3 {
-    color: #294b3b;
-    font-size: 28px;
-    line-height: 1.7;
-    margin-bottom: 32px;
-}
-
-.representative-message-box p {
-    color: #5d6963;
-    line-height: 2.1;
-}
-
-
-/* QUALIFICATION */
-
-.qualification-section {
-    background: #ffffff;
-}
-
-.qualification-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.qualification-card {
-    padding: 38px 30px;
-    background: #f7faf8;
-    border: 1px solid #dfe8e2;
-    border-radius: 14px;
-}
-
-.qualification-card > span {
-    display: block;
-    color: #5e9978;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    margin-bottom: 16px;
-}
-
-.qualification-card h3 {
-    color: #294b3b;
-    font-size: 21px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
-
-.qualification-card p {
-    color: #65726c;
-    font-size: 14px;
-    line-height: 2;
-    margin-bottom: 0;
-}
-
-
-/* SPECIALTY */
-
-.representative-specialty {
-    background: #f5f8f6;
-}
-
-.representative-specialty-inner {
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 70px;
-    align-items: start;
-}
-
-.representative-specialty h2 {
-    color: #294b3b;
-    font-size: clamp(30px, 4vw, 42px);
-    line-height: 1.55;
-}
-
-.representative-specialty-inner > div:last-child p {
-    color: #5d6963;
-    line-height: 2.1;
-}
-
-
-/* PHILOSOPHY */
-
-.philosophy-section {
-    background: #ffffff;
-}
-
-.philosophy-box {
-    text-align: center;
-    padding: 55px 45px;
-    background: #f4f8f5;
-    border-radius: 14px;
-    border: 1px solid #dce7df;
-}
-
-.philosophy-main {
-    color: #2f6b50 !important;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 30px !important;
-}
-
-.philosophy-box p {
-    color: #5d6963;
-    line-height: 2.1;
-}
-
-
-/* CAREER */
-
-.career-section {
-    background: #f8faf9;
-}
-
-.career-box {
-    border-top: 1px solid #dfe7e1;
-}
-
-.career-item {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 25px;
-    padding: 30px 0;
-    border-bottom: 1px solid #dfe7e1;
-}
-
-.career-number {
-    color: #5e9978;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-}
-
-.career-item h3 {
-    color: #294b3b;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.career-item p {
-    color: #65726c;
-    line-height: 2;
-    margin: 0;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-    .representative-page-hero {
-        padding: 65px 0 60px;
-    }
-
-    .representative-page-hero h1 {
-        font-size: 36px;
-    }
-
-    .representative-page-hero > div > p:last-child {
-        font-size: 16px;
-    }
-
-    .representative-profile-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .representative-profile-photo {
-        width: min(280px, 75%);
-    }
-
-    .representative-profile-content {
-        text-align: center;
-    }
-
-    .representative-profile-content h2 {
-        font-size: 29px;
-    }
-
-    .representative-message-box {
-        padding: 35px 25px;
-    }
-
-    .representative-message-box h3 {
-        font-size: 23px;
-    }
-
-    .qualification-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .qualification-card {
-        padding: 30px 25px;
-    }
-
-    .representative-specialty-inner {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .representative-specialty h2 {
-        font-size: 30px;
-    }
-
-    .philosophy-box {
-        padding: 40px 25px;
-    }
-
-    .philosophy-main {
-        font-size: 25px;
-    }
-
-    .career-item {
-        grid-template-columns: 50px 1fr;
-        gap: 15px;
-    }
-
-}
-/* =========================
-   QUALIFICATION LIST
-========================= */
-
-.qualification-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.qualification-list li {
-    position: relative;
-
-    color: #5d6963;
-
-    font-size: 15px;
-
-    line-height: 1.8;
-
-    padding: 10px 0 10px 20px;
-
-    border-bottom: 1px solid #e1e9e3;
-}
-
-.qualification-list li:last-child {
-    border-bottom: none;
-}
-
-.qualification-list li::before {
-    content: "●";
-
-    position: absolute;
-
-    left: 0;
-    top: 10px;
-
-    color: #5e9978;
-
-    font-size: 9px;
-}
-/* =========================================================
-   REPRESENTATIVE - CAREER
-   ========================================================= */
-
-.career-section {
-    background: #ffffff;
-}
-
-.career-timeline {
-    position: relative;
-
-    max-width: 920px;
-
-    margin: 0 auto;
-}
-
-/* 縦のライン */
-
-.career-timeline::before {
-    content: "";
-
-    position: absolute;
-
-    left: 145px;
-    top: 0;
-    bottom: 0;
-
-    width: 1px;
-
-    background: #d8e5dc;
-}
-
-
-/* 各経歴 */
-
-.career-item {
-    position: relative;
-
-    display: grid;
-
-    grid-template-columns: 145px 1fr;
-
-    gap: 50px;
-
-    padding-bottom: 65px;
-}
-
-.career-item:last-child {
-    padding-bottom: 0;
-}
-
-
-/* 年 */
-
-.career-year {
-    position: relative;
-
-    color: #2f6b50;
-
-    font-size: 16px;
-    font-weight: 800;
-
-    line-height: 1.7;
-
-    text-align: right;
-
-    padding-right: 38px;
-}
-
-.career-year::after {
-    content: "";
-
-    position: absolute;
-
-    right: -5px;
-    top: 7px;
-
-    width: 11px;
-    height: 11px;
-
-    background: #5e9978;
-
-    border: 3px solid #ffffff;
-
-    border-radius: 50%;
-
-    box-shadow: 0 0 0 1px #bcd3c4;
-}
-
-.career-year span {
-    color: #7a8780;
-
-    font-size: 12px;
-}
-
-
-/* 内容 */
-
-.career-content {
-    background: #f6f9f7;
-
-    padding: 30px 35px;
-
-    border: 1px solid #e1e9e3;
-
-    border-radius: 12px;
-}
-
-.career-label {
-    display: inline-block;
-
-    color: #5e9978;
-
-    font-size: 11px;
-    font-weight: 800;
-
-    letter-spacing: 0.12em;
-
-    margin-bottom: 10px;
-}
-
-.career-content h3 {
-    color: #294b3b;
-
-    font-size: 22px;
-
-    line-height: 1.6;
-
-    margin-bottom: 20px;
-}
-
-.career-content p {
-    color: #5d6963;
-
-    font-size: 15px;
-
-    line-height: 2;
-
-    margin-bottom: 18px;
-}
-
-.career-content p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* 強調メッセージ */
-
-.career-emphasis {
-    color: #2f6b50 !important;
-
-    font-size: 18px !important;
-
-    font-weight: 700;
-
-    line-height: 1.9 !important;
-
-    padding: 20px 25px;
-
-    background: #ffffff;
-
-    border-left: 4px solid #5e9978;
-
-    border-radius: 5px;
-}
-
-
-/* =========================================================
-   CAREER - TABLET
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .career-timeline::before {
-        left: 95px;
-    }
-
-    .career-item {
-        grid-template-columns: 95px 1fr;
-
-        gap: 30px;
-
-        padding-bottom: 45px;
-    }
-
-    .career-year {
-        font-size: 14px;
-
-        padding-right: 28px;
-    }
-
-    .career-content {
-        padding: 25px 24px;
-    }
-
-    .career-content h3 {
-        font-size: 20px;
-    }
-
-}
-
-
-/* =========================================================
-   CAREER - SMARTPHONE
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-    .career-timeline::before {
-        left: 12px;
-    }
-
-    .career-item {
-        display: block;
-
-        padding-left: 35px;
-
-        padding-bottom: 35px;
-    }
-
-    .career-year {
-        text-align: left;
-
-        padding: 0;
-
-        margin-bottom: 12px;
-
-        font-size: 14px;
-    }
-
-    .career-year::after {
-        left: -28px;
-        right: auto;
-
-        top: 5px;
-    }
-
-    .career-content {
-        padding: 24px 20px;
-    }
-
-    .career-content h3 {
-        font-size: 19px;
-    }
-
-    .career-content p {
-        font-size: 14px;
-
-        line-height: 1.9;
-    }
-
-    .career-emphasis {
-        font-size: 16px !important;
-
-        padding: 17px 18px;
-    }
-
-}
-/* =========================================================
-   REPRESENTATIVE - CLOSING
-   ========================================================= */
-
-.representative-closing-section {
-    background: #f5f8f6;
-
-    text-align: center;
-}
-
-.representative-closing {
-    max-width: 760px;
-
-    margin: 0 auto;
-}
-
-.representative-closing h2 {
-    color: #294b3b;
-
-    font-size: clamp(28px, 4vw, 40px);
-
-    line-height: 1.6;
-
-    margin-bottom: 30px;
-}
-
-.representative-closing > p:not(.section-label):not(.closing-emphasis) {
-    color: #5d6963;
-
-    line-height: 2.1;
-
-    margin-bottom: 30px;
-}
-
-.closing-emphasis {
-    color: #2f6b50;
-
-    font-size: 18px;
-
-    font-weight: 700;
-
-    line-height: 2;
-
-    padding: 30px;
-
-    background: #ffffff;
-
-    border-radius: 10px;
-}
-/* =========================================================
-   REPRESENTATIVE PAGE
-   代表紹介ページ専用デザイン
-   ========================================================= */
-
-
-/* =========================================================
-   PAGE HERO
-   ========================================================= */
-
-.representative-page-hero {
-    position: relative;
-    overflow: hidden;
-
-    padding: 100px 0 90px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #eef6f1 0%,
-            #ffffff 55%,
-            #edf5f0 100%
-        );
-
-    border-bottom: 1px solid #e1ebe5;
-}
-
-.representative-page-hero::before {
-    content: "";
-
-    position: absolute;
-
-    width: 380px;
-    height: 380px;
-
-    border-radius: 50%;
-
-    background: rgba(100, 160, 125, 0.07);
-
-    top: -180px;
-    right: -80px;
-}
-
-.representative-page-hero::after {
-    content: "";
-
-    position: absolute;
-
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-
-    background: rgba(100, 160, 125, 0.05);
-
-    bottom: -120px;
-    left: -70px;
-}
-
-.representative-page-hero .container {
-    position: relative;
-    z-index: 1;
-
-    text-align: center;
-}
-
-.representative-page-hero .section-label {
-    margin-bottom: 18px;
-}
-
-.representative-page-hero h1 {
-    color: #263c32;
-
-    font-size: clamp(38px, 5vw, 58px);
-
-    line-height: 1.4;
-
-    letter-spacing: 0.08em;
-
-    margin-bottom: 25px;
-}
-
-.representative-page-hero p:last-child {
-    color: #5f6e67;
-
-    font-size: 18px;
-
-    line-height: 2;
-
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   PROFILE
-   ========================================================= */
-
-.representative-profile {
-    background: #ffffff;
-}
-
-.representative-profile-inner {
-    display: grid;
-
-    grid-template-columns: 0.75fr 1.25fr;
-
-    gap: 75px;
-
-    align-items: center;
-}
-
-.representative-profile-photo {
-    width: 100%;
-
-    max-width: 400px;
-
-    margin: 0 auto;
-
-    overflow: hidden;
-
-    border-radius: 16px;
-
-    box-shadow:
-        0 18px 45px rgba(42, 71, 58, 0.10);
-
-    border: 1px solid #dce7e0;
-
-    background: #f4f8f5;
-}
-
-.representative-profile-photo img {
-    width: 100%;
-
-    height: auto;
-
-    display: block;
-
-    object-fit: cover;
-}
-
-.representative-profile-content {
-    max-width: 650px;
-}
-
-.representative-profile-content .section-label {
-    margin-bottom: 10px;
-}
-
-.representative-profile-content h2 {
-    color: #294b3b;
-
-    font-size: clamp(32px, 4vw, 44px);
-
-    line-height: 1.4;
-
-    letter-spacing: 0.06em;
-
-    margin-bottom: 10px;
-}
-
-.representative-title {
-    color: #4f8065 !important;
-
-    font-size: 15px;
-
-    font-weight: 700;
-
-    line-height: 1.8;
-
-    margin-bottom: 30px !important;
-}
-
-.representative-profile-content > p:not(.section-label):not(.representative-title) {
-    color: #5d6963;
-
-    line-height: 2.1;
-
-    margin-bottom: 22px;
-}
-
-
-/* =========================================================
-   REPRESENTATIVE MESSAGE
-   ========================================================= */
-
-.representative-message {
-    background: #f5f8f6;
-}
-
-.representative-message-box {
-    padding: 55px 65px;
-
-    background: #ffffff;
-
-    border: 1px solid #e0e9e3;
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 10px 30px rgba(42, 68, 55, 0.05);
-}
-
-.representative-message-box h3 {
-    color: #294b3b;
-
-    font-size: clamp(25px, 3vw, 32px);
-
-    line-height: 1.7;
-
-    letter-spacing: 0.04em;
-
-    margin-bottom: 35px;
-}
-
-.representative-message-box p {
-    color: #5d6963;
-
-    line-height: 2.15;
-
-    margin-bottom: 24px;
-}
-
-.representative-message-box p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   QUALIFICATION
-   ========================================================= */
-
-.qualification-section {
-    background: #ffffff;
-}
-
-.qualification-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 22px;
-}
-
-.qualification-card {
-    background: #f7faf8;
-
-    border: 1px solid #dfe9e2;
-
-    border-radius: 14px;
-
-    padding: 35px 30px;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
-}
-
-.qualification-card:hover {
-    transform: translateY(-4px);
-
-    border-color: #b9d2c2;
-
-    box-shadow:
-        0 12px 30px rgba(42, 68, 55, 0.07);
-}
-
-.qualification-card > span {
-    display: block;
-
-    color: #6b9c80;
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.12em;
-
-    line-height: 1.5;
-
-    margin-bottom: 14px;
-}
-
-.qualification-card h3 {
-    color: #294b3b;
-
-    font-size: 21px;
-
-    line-height: 1.6;
-
-    margin-bottom: 20px;
-}
-
-.qualification-list {
-    list-style: none;
-
-    margin: 0;
-
-    padding: 0;
-}
-
-.qualification-list li {
-    position: relative;
-
-    color: #5d6963;
-
-    font-size: 14px;
-
-    line-height: 1.8;
-
-    padding-left: 18px;
-
-    margin-bottom: 9px;
-}
-
-.qualification-list li::before {
-    content: "";
-
-    position: absolute;
-
-    width: 6px;
-    height: 6px;
-
-    border-radius: 50%;
-
-    background: #6b9c80;
-
-    left: 0;
-    top: 0.75em;
-}
-
-.qualification-list li:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   CAREER
-   ========================================================= */
-
-.career-section {
-    background: #f5f8f6;
-}
-
-.career-timeline {
-    position: relative;
-
-    max-width: 980px;
-
-    margin: 0 auto;
-}
-
-.career-timeline::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-
-    left: 170px;
-
-    width: 1px;
-
-    background: #cbdcd1;
-}
-
-.career-item {
-    position: relative;
-
-    display: grid;
-
-    grid-template-columns: 170px 1fr;
-
-    gap: 50px;
-
-    padding-bottom: 55px;
-}
-
-.career-item:last-child {
-    padding-bottom: 0;
-}
-
-.career-year {
-    position: relative;
-
-    color: #3f7659;
-
-    font-size: 17px;
-
-    font-weight: 800;
-
-    line-height: 1.6;
-
-    text-align: right;
-
-    padding-right: 35px;
-}
-
-.career-year::after {
-    content: "";
-
-    position: absolute;
-
-    width: 13px;
-    height: 13px;
-
-    border-radius: 50%;
-
-    background: #ffffff;
-
-    border: 3px solid #5f9978;
-
-    right: -7px;
-
-    top: 5px;
-
-    z-index: 2;
-}
-
-.career-year span {
-    color: #789087;
-
-    font-size: 12px;
-
-    font-weight: 600;
-}
-
-.career-content {
-    background: #ffffff;
-
-    padding: 32px 35px;
-
-    border: 1px solid #e0e8e3;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 7px 22px rgba(42, 68, 55, 0.04);
-}
-
-.career-label {
-    display: inline-block;
-
-    color: #5e9978;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.12em;
-
-    margin-bottom: 10px;
-}
-
-.career-content h3 {
-    color: #294b3b;
-
-    font-size: 22px;
-
-    line-height: 1.6;
-
-    margin-bottom: 18px;
-}
-
-.career-content p {
-    color: #606d66;
-
-    font-size: 15px;
-
-    line-height: 2;
-
-    margin-bottom: 18px;
-}
-
-.career-content p:last-child {
-    margin-bottom: 0;
-}
-
-.career-emphasis {
-    color: #2f6b50 !important;
-
-    font-size: 18px !important;
-
-    font-weight: 700;
-
-    line-height: 1.9 !important;
-
-    padding: 18px 20px;
-
-    background: #f1f7f3;
-
-    border-left: 4px solid #5e9978;
-
-    border-radius: 4px;
-}
-
-
-/* =========================================================
-   CLOSING MESSAGE
-   ========================================================= */
-
-.representative-closing-section {
-    background: #ffffff;
-
-    text-align: center;
-}
-
-.representative-closing {
-    padding: 20px 0;
-}
-
-.representative-closing .section-label {
-    margin-bottom: 15px;
-}
-
-.representative-closing h2 {
-    color: #294b3b;
-
-    font-size: clamp(30px, 4vw, 42px);
-
-    line-height: 1.6;
-
-    letter-spacing: 0.05em;
-
-    margin-bottom: 35px;
-}
-
-.representative-closing > p:not(.section-label):not(.closing-emphasis) {
-    color: #5e6b64;
-
-    font-size: 16px;
-
-    line-height: 2.15;
-
-    max-width: 680px;
-
-    margin: 0 auto 30px;
-}
-
-.closing-emphasis {
-    color: #2f6b50 !important;
-
-    font-size: 19px !important;
-
-    font-weight: 700;
-
-    line-height: 2 !important;
-
-    margin-bottom: 0 !important;
-}
-
-
-/* =========================================================
-   HUMAN & ORGANIZATION
-   ========================================================= */
-
-.representative-specialty {
-    background: #f5f8f6;
-}
-
-.representative-specialty-inner {
-    display: grid;
-
-    grid-template-columns: 0.8fr 1.2fr;
-
-    gap: 75px;
-
-    align-items: start;
-}
-
-.representative-specialty-inner h2 {
-    color: #294b3b;
-
-    font-size: clamp(28px, 4vw, 40px);
-
-    line-height: 1.6;
-
-    letter-spacing: 0.04em;
-}
-
-.representative-specialty-inner > div:last-child {
-    padding-top: 8px;
-}
-
-.representative-specialty-inner p {
-    color: #5d6963;
-
-    line-height: 2.1;
-
-    margin-bottom: 24px;
-}
-
-.representative-specialty-inner p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   PHILOSOPHY
-   ========================================================= */
-
-.philosophy-section {
-    background: #ffffff;
-
-    text-align: center;
-}
-
-.philosophy-box {
-    padding: 55px 65px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #f1f7f3,
-            #f8faf9
-        );
-
-    border: 1px solid #dfe9e2;
-
-    border-radius: 14px;
-}
-
-.philosophy-main {
-    color: #2f6b50 !important;
-
-    font-size: 28px !important;
-
-    font-weight: 700;
-
-    letter-spacing: 0.08em;
-
-    line-height: 1.7 !important;
-
-    margin-bottom: 35px !important;
-}
-
-.philosophy-box p:not(.philosophy-main) {
-    color: #5d6963;
-
-    font-size: 16px;
-
-    line-height: 2.1;
-
-    margin-bottom: 22px;
-}
-
-.philosophy-box p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   REPRESENTATIVE PAGE - TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .representative-profile-inner {
-        grid-template-columns: 1fr;
-
-        gap: 50px;
-    }
-
-    .representative-profile-photo {
-        width: min(400px, 100%);
-    }
-
-    .representative-profile-content {
-        max-width: 760px;
-
-        margin: 0 auto;
-
-        text-align: center;
-    }
-
-    .representative-profile-content .section-label {
-        margin-bottom: 10px;
-    }
-
-    .qualification-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .qualification-card {
-        padding: 32px 30px;
-    }
-
-    .career-timeline::before {
-        left: 130px;
-    }
-
-    .career-item {
-        grid-template-columns: 130px 1fr;
-
-        gap: 35px;
-    }
-
-    .career-year {
-        padding-right: 28px;
-
-        font-size: 15px;
-    }
-
-    .representative-specialty-inner {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-
-}
-
-
-/* =========================================================
-   REPRESENTATIVE PAGE - MOBILE
-   ========================================================= */
-
-@media (max-width: 680px) {
-
-    .representative-page-hero {
-        padding: 70px 0 65px;
-    }
-
-    .representative-page-hero h1 {
-        font-size: 35px;
-
-        margin-bottom: 20px;
-    }
-
-    .representative-page-hero p:last-child {
-        font-size: 15px;
-
-        line-height: 2;
-    }
-
-
-    /* Profile */
-
-    .representative-profile-inner {
-        gap: 35px;
-    }
-
-    .representative-profile-photo {
-        width: min(320px, 100%);
-    }
-
-    .representative-profile-content h2 {
-        font-size: 31px;
-    }
-
-    .representative-profile-content > p:not(.section-label):not(.representative-title) {
-        text-align: left;
-
-        font-size: 15px;
-
-        line-height: 2;
-    }
-
-
-    /* Message */
-
-    .representative-message-box {
-        padding: 35px 25px;
-    }
-
-    .representative-message-box h3 {
-        font-size: 23px;
-
-        line-height: 1.7;
-
-        margin-bottom: 28px;
-    }
-
-    .representative-message-box p {
-        font-size: 15px;
-
-        line-height: 2;
-    }
-
-
-    /* Qualification */
-
-    .qualification-grid {
-        grid-template-columns: 1fr;
-
-        gap: 14px;
-    }
-
-    .qualification-card {
-        padding: 28px 24px;
-    }
-
-    .qualification-card h3 {
-        font-size: 20px;
-    }
-
-
-    /* Career */
-
-    .career-timeline {
-        padding-left: 0;
-    }
-
-    .career-timeline::before {
-        left: 11px;
-    }
-
-    .career-item {
-        display: block;
-
-        padding-left: 35px;
-
-        padding-bottom: 40px;
-    }
-
-    .career-year {
-        text-align: left;
-
-        padding: 0 0 15px 0;
-
-        font-size: 15px;
-    }
-
-    .career-year::after {
-        left: -30px;
-
-        right: auto;
-
-        top: 3px;
-    }
-
-    .career-content {
-        padding: 27px 22px;
-    }
-
-    .career-content h3 {
-        font-size: 20px;
-
-        line-height: 1.6;
-    }
-
-    .career-content p {
-        font-size: 14px;
-
-        line-height: 2;
-    }
-
-    .career-emphasis {
-        font-size: 16px !important;
-
-        padding: 16px;
-    }
-
-
-    /* Closing */
-
-    .representative-closing h2 {
-        font-size: 28px;
-
-        line-height: 1.7;
-    }
-
-    .representative-closing > p:not(.section-label):not(.closing-emphasis) {
-        font-size: 15px;
-
-        line-height: 2;
-    }
-
-    .closing-emphasis {
-        font-size: 17px !important;
-
-        line-height: 2 !important;
-    }
-
-
-    /* Human & Organization */
-
-    .representative-specialty-inner {
-        gap: 25px;
-    }
-
-    .representative-specialty-inner h2 {
-        font-size: 28px;
-
-        line-height: 1.6;
-    }
-
-    .representative-specialty-inner p {
-        font-size: 15px;
-
-        line-height: 2;
-    }
-
-
-    /* Philosophy */
-
-    .philosophy-box {
-        padding: 35px 25px;
-    }
-
-    .philosophy-main {
-        font-size: 23px !important;
-
-        line-height: 1.7 !important;
-    }
-
-    .philosophy-box p:not(.philosophy-main) {
-        font-size: 15px;
-
-        line-height: 2;
-    }
-
-}
-
-
-/* =========================================================
-   REPRESENTATIVE PAGE - SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 400px) {
-
-    .representative-page-hero h1 {
-        font-size: 31px;
-    }
-
-    .representative-profile-photo {
-        width: 100%;
-    }
-
-    .representative-message-box {
-        padding: 30px 20px;
-    }
-
-    .career-item {
-        padding-left: 30px;
-    }
-
-    .career-timeline::before {
-        left: 8px;
-    }
-
-    .career-year::after {
-        left: -27px;
-    }
-
-}
-/* =========================================================
-   ORGANIZATION PAGE
-   人材育成・組織づくり
-========================================================= */
-
-
-/* =========================
-   PAGE HERO
-========================= */
-
-.organization-page-hero {
-    padding: 110px 0 100px;
-    background: linear-gradient(
-        135deg,
-        #6cae73 0%,
-        #229d6d 100%
-    );
-    color: #fff;
-}
-
-.organization-page-hero .section-label {
-    color: rgba(255,255,255,0.85);
-}
-
-.organization-page-hero h1 {
-    margin: 20px 0 25px;
-    font-size: clamp(36px, 5vw, 58px);
-    line-height: 1.25;
-    letter-spacing: 0.05em;
-}
-
-.organization-page-hero p:last-child {
-    margin: 0;
-    font-size: 22px;
-    line-height: 1.8;
-    font-weight: 500;
-}
-
-
-/* =========================
-   INTRODUCTION
-========================= */
-
-.organization-introduction {
-    background: #fff;
-}
-
-.organization-lead {
-    max-width: 850px;
-    margin: 50px auto 0;
-    font-size: 17px;
-    line-height: 2.2;
-}
-
-.organization-lead p {
-    margin-bottom: 28px;
-}
-
-.organization-lead strong {
-    font-weight: 700;
-}
-
-
-/* =========================
-   ICM
-========================= */
-
-.organization-icm-section {
-    background: #f7faf8;
-}
-
-.icm-introduction {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: center;
-    margin-top: 55px;
-}
-
-.icm-text h3 {
-    margin-bottom: 25px;
-    font-size: 28px;
-    line-height: 1.5;
-}
-
-.icm-text p {
-    margin-bottom: 22px;
-    line-height: 2;
-}
-
-.icm-image img,
-.workplace-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-}
-
-
-/* =========================
-   WORKPLACE IMPROVEMENT
-========================= */
-
-.workplace-improvement-section {
-    background: #fff;
-}
-
-.workplace-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: center;
-    margin-top: 55px;
-}
-
-.workplace-content h3 {
-    margin-bottom: 25px;
-    font-size: 28px;
-    line-height: 1.5;
-}
-
-.workplace-content p {
-    margin-bottom: 22px;
-    line-height: 2;
-}
-
-.organization-check-list {
-    margin: 30px 0 0;
-    padding: 0;
-    list-style: none;
-}
-
-.organization-check-list li {
-    position: relative;
-    padding: 12px 0 12px 30px;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.organization-check-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    top: 12px;
-    font-weight: bold;
-}
-
-
-/* =========================
-   CARD SUPPORT
-========================= */
-
-.card-support-section {
-    background: #f5faf9;
-}
-
-.card-support-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin-top: 55px;
-}
-
-.growth-card {
-    background: #fff;
-    padding: 22px;
-    border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-}
-
-.growth-card-image {
-    margin-bottom: 20px;
-}
-
-.growth-card-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.growth-card h3 {
-    margin-bottom: 12px;
-    font-size: 20px;
-}
-
-.growth-card p {
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.9;
-}
-
-.card-support-message {
-    max-width: 850px;
-    margin: 55px auto 0;
-    text-align: center;
-    font-size: 17px;
-    line-height: 2;
-}
-
-.card-support-message p {
-    margin-bottom: 15px;
-}
-
-.organization-certification {
-    margin-top: 50px;
-    text-align: center;
-    color: #555;
-}
-
-.organization-certification p {
-    margin: 5px 0;
-}
-
-.certification-label {
-    font-size: 14px;
-}
-
-
-/* =========================
-   PROCESS
-========================= */
-
-.organization-process-section {
-    background: #fff;
-}
-
-.organization-process-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 55px;
-}
-
-.process-card {
-    position: relative;
-    padding: 40px 35px;
-    background: #f7faf8;
-    border-top: 4px solid #59a86a;
-}
-
-.process-number {
-    display: block;
-    margin-bottom: 15px;
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    font-weight: 700;
-}
-
-.process-card h3 {
-    margin-bottom: 18px;
-    font-size: 27px;
-}
-
-.process-card p {
-    margin: 0;
-    line-height: 2;
-}
-
-
-/* =========================
-   PHILOSOPHY
-========================= */
-
-.organization-philosophy-section {
-    background: #f5f7f5;
-}
-
-.organization-philosophy {
-    text-align: center;
-}
-
-.organization-philosophy h2 {
-    margin: 25px 0 40px;
-    font-size: clamp(28px, 4vw, 42px);
-    line-height: 1.6;
-}
-
-.organization-philosophy p:not(.section-label):not(.organization-emphasis) {
-    margin-bottom: 25px;
-    text-align: left;
-    line-height: 2.1;
-}
-
-.organization-emphasis {
-    margin-top: 50px;
-    font-size: 24px;
-    line-height: 2;
-    font-weight: 700;
-}
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-    .icm-introduction,
-    .workplace-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .card-support-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .organization-process-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .organization-page-hero {
-        padding: 80px 0 70px;
-    }
-
-    .organization-page-hero h1 {
-        font-size: 34px;
-    }
-
-    .organization-page-hero p:last-child {
-        font-size: 18px;
-    }
-
-    .organization-lead {
-        font-size: 16px;
-        line-height: 2;
-    }
-
-    .icm-text h3,
-    .workplace-content h3 {
-        font-size: 23px;
-    }
-
-    .card-support-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .growth-card {
-        padding: 20px;
-    }
-
-    .organization-philosophy h2 {
+    .section h2 {
         font-size: 27px;
     }
 
-    .organization-emphasis {
-        font-size: 20px;
+    .button {
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
-}
-/* =========================================
-   ORGANIZATION PAGE
-========================================= */
-
-.organization-introduction-text {
-    max-width: 760px;
-    margin: 50px auto 0;
-    line-height: 2;
-}
-
-.organization-introduction-text p {
-    margin-bottom: 25px;
-}
-
-
-/* ICM */
-
-.organization-icm-section {
-    background: #f7f9f8;
-}
-
-.organization-two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: center;
-    max-width: 1000px;
-    margin: 60px auto 0;
-}
-
-.organization-text h3 {
-    font-size: 1.35rem;
-    margin-bottom: 25px;
-}
-
-.organization-text p {
-    line-height: 2;
-    margin-bottom: 20px;
-}
-
-.organization-image {
-    text-align: center;
-}
-
-.organization-image img {
-    width: 100%;
-    max-width: 480px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-
-/* 職場改善 */
-
-.workplace-improvement-section {
-    background: #ffffff;
-}
-
-.organization-list {
-    margin-top: 25px;
-    padding-left: 0;
-    list-style: none;
-}
-
-.organization-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid #dfe6e2;
-}
-
-.organization-list li::before {
-    content: "✓";
-    margin-right: 10px;
-}
-
-
-/* =========================================
-   CARD SUPPORT
-========================================= */
-
-.card-support-section {
-    background: #f1f7f5;
-}
-
-.card-support-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1100px;
-    margin: 55px auto 0;
-}
-
-.support-card {
-    background: #ffffff;
-    padding: 22px;
-    text-align: center;
-    border: 1px solid #e3ebe7;
-}
-
-.support-card img {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-}
-
-.support-card h3 {
-    font-size: 1.05rem;
-    margin-bottom: 15px;
-}
-
-.support-card p {
-    font-size: 0.9rem;
-    line-height: 1.8;
-    text-align: left;
-}
-
-.card-support-message {
-    max-width: 760px;
-    margin: 55px auto 0;
-    text-align: center;
-    line-height: 2;
-}
-
-.card-support-message p {
-    margin-bottom: 15px;
-}
-
-
-/* =========================================
-   PROCESS
-========================================= */
-
-.organization-process-section {
-    background: #ffffff;
-}
-
-.process-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1000px;
-    margin: 55px auto 0;
-}
-
-.process-card {
-    padding: 35px;
-    background: #f7f9f8;
-    border-top: 2px solid #4b9b70;
-}
-
-.process-number {
-    display: block;
-    font-size: 0.8rem;
-    letter-spacing: 0.15em;
-    margin-bottom: 25px;
-}
-
-.process-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-
-.process-card p {
-    font-size: 0.9rem;
-    line-height: 1.9;
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 768px) {
-
-    .organization-two-column {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .organization-two-column.reverse .organization-image {
-        order: -1;
-    }
-
-    .card-support-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-
-    .support-card {
-        padding: 15px;
-    }
-
-    .support-card img {
-        max-width: 140px;
-    }
-
-    .process-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-}
-
-
-@media (max-width: 480px) {
-
-    .card-support-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .organization-text h3 {
-        font-size: 1.2rem;
-    }
-
-}
-/* =========================================================
-   ORGANIZATION PAGE
-   人材育成・組織づくり
-   ========================================================= */
-
-/* PAGE HERO */
-
-.organization-page-hero {
-    background:
-        linear-gradient(
-            135deg,
-            #f1f7f3 0%,
-            #ffffff 55%,
-            #edf5f0 100%
-        );
-
-    border-bottom: 1px solid #e2ebe5;
-
-    padding: 90px 0;
-}
-
-.organization-page-hero .container {
-    text-align: center;
-}
-
-.organization-page-hero h1 {
-    color: #203a30;
-
-    font-size: clamp(34px, 5vw, 54px);
-
-    line-height: 1.5;
-
-    letter-spacing: 0.04em;
-
-    margin-bottom: 25px;
-}
-
-.organization-page-hero p:not(.section-label) {
-    color: #586761;
-
-    font-size: 17px;
-
-    line-height: 2;
-}
-
-
-/* INTRO */
-
-.organization-intro {
-    background: #ffffff;
-
-    text-align: center;
-}
-
-.organization-intro-text {
-    color: #586761;
-
-    font-size: 17px;
-
-    line-height: 2.2;
-
-    text-align: left;
-}
-
-
-/* PHILOSOPHY */
-
-.organization-philosophy {
-    background: #f5f8f6;
-}
-
-.organization-philosophy-box {
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    padding: 55px 65px;
-
-    background: #ffffff;
-
-    border-left: 5px solid #4f8d6c;
-
-    border-radius: 8px;
-
-    box-shadow: 0 10px 30px rgba(42, 68, 55, 0.05);
-}
-
-.organization-philosophy-box h3 {
-    color: #294b3b;
-
-    font-size: 28px;
-
-    line-height: 1.7;
-
-    margin-bottom: 28px;
-}
-
-.organization-philosophy-box p {
-    color: #586761;
-
-    line-height: 2.1;
-}
-
-
-/* ICM */
-
-.icm-section {
-    background: #ffffff;
-}
-
-.icm-grid {
-    display: grid;
-
-    grid-template-columns: 0.9fr 1.1fr;
-
-    gap: 60px;
-
-    align-items: center;
-}
-
-.icm-content h3 {
-    color: #294b3b;
-
-    font-size: 28px;
-
-    line-height: 1.6;
-
-    margin-bottom: 25px;
-}
-
-.icm-content p {
-    color: #5d6963;
-
-    line-height: 2;
-
-    margin-bottom: 20px;
-}
-
-.icm-image {
-    background: #f5f8f6;
-
-    border: 1px solid #dfe8e2;
-
-    border-radius: 14px;
-
-    padding: 35px;
-}
-
-.icm-image img {
-    width: 100%;
-
-    border-radius: 10px;
-}
-
-
-/* SURVEY FLOW */
-
-.organization-flow {
-    background: #f8faf9;
-}
-
-.organization-flow-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.organization-flow-card {
-    position: relative;
-
-    background: #ffffff;
-
-    border: 1px solid #dfe8e2;
-
-    border-radius: 14px;
-
-    padding: 35px 30px;
-
-    box-shadow: 0 8px 25px rgba(42, 68, 55, 0.04);
-}
-
-.organization-flow-number {
-    color: #5e9978;
-
-    font-size: 13px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.12em;
-
-    margin-bottom: 15px;
-
-    display: block;
-}
-
-.organization-flow-card h3 {
-    color: #294b3b;
-
-    font-size: 21px;
-
-    line-height: 1.6;
-
-    margin-bottom: 15px;
-}
-
-.organization-flow-card p {
-    color: #65726c;
-
-    font-size: 14px;
-
-    line-height: 2;
-
-    margin-bottom: 0;
-}
-
-
-/* WORKPLACE IMPROVEMENT */
-
-.organization-improvement {
-    background: #ffffff;
-}
-
-.organization-improvement-box {
-    max-width: 950px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.organization-improvement-item {
-    background: #f5f8f6;
-
-    border-radius: 12px;
-
-    padding: 30px 25px;
-
-    border: 1px solid #e1e9e3;
-}
-
-.organization-improvement-item span {
-    color: #6ba082;
-
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.12em;
-
-    display: block;
-
-    margin-bottom: 12px;
-}
-
-.organization-improvement-item h3 {
-    color: #294b3b;
-
-    font-size: 19px;
-
-    line-height: 1.6;
-
-    margin-bottom: 12px;
-}
-
-.organization-improvement-item p {
-    color: #65726c;
-
-    font-size: 14px;
-
-    line-height: 1.9;
-
-    margin-bottom: 0;
-}
-
-
-/* CARD SUPPORT */
-
-.card-support-section {
-    background: #f5f8f6;
-}
-
-.card-support-inner {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 60px;
-
-    align-items: center;
-}
-
-.card-support-content h3 {
-    color: #294b3b;
-
-    font-size: 28px;
-
-    line-height: 1.6;
-
-    margin-bottom: 25px;
-}
-
-.card-support-content p {
-    color: #5d6963;
-
-    line-height: 2;
-
-    margin-bottom: 20px;
-}
-
-.card-support-points {
-    margin-top: 25px;
-
-    display: grid;
-
-    gap: 12px;
-}
-
-.card-support-point {
-    background: #ffffff;
-
-    border: 1px solid #dfe8e2;
-
-    border-radius: 10px;
-
-    padding: 18px 20px;
-
-    color: #405148;
-
-    font-weight: 600;
-}
-
-.card-support-visual {
-    background: #ffffff;
-
-    border: 1px solid #dfe8e2;
-
-    border-radius: 16px;
-
-    padding: 40px;
-
-    text-align: center;
-
-    box-shadow: 0 10px 30px rgba(42, 68, 55, 0.05);
-}
-
-.card-support-visual h4 {
-    color: #2f6b50;
-
-    font-size: 22px;
-
-    margin-bottom: 20px;
-}
-
-.card-support-visual p {
-    color: #68746e;
-
-    line-height: 2;
-}
-
-
-/* SUPPORT EFFECT */
-
-.organization-result {
-    background: #ffffff;
-}
-
-.organization-result-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.organization-result-card {
-    padding: 35px 30px;
-
-    background: #f8faf9;
-
-    border: 1px solid #e1e9e3;
-
-    border-radius: 14px;
-
-    text-align: center;
-}
-
-.organization-result-card h3 {
-    color: #294b3b;
-
-    font-size: 20px;
-
-    margin-bottom: 15px;
-}
-
-.organization-result-card p {
-    color: #65726c;
-
-    font-size: 14px;
-
-    line-height: 1.9;
-
-    margin-bottom: 0;
-}
-
-
-/* CLOSING */
-
-.organization-closing {
-    background:
-        linear-gradient(
-            135deg,
-            #2e644c,
-            #3d7a5c
-        );
-
-    color: #ffffff;
-
-    text-align: center;
-}
-
-.organization-closing .section-label {
-    color: #c9e3d3;
-}
-
-.organization-closing h2 {
-    color: #ffffff;
-
-    font-size: clamp(30px, 4vw, 44px);
-
-    line-height: 1.6;
-
-    margin-bottom: 25px;
-}
-
-.organization-closing p {
-    color: #e2eee7;
-
-    line-height: 2;
-
-    max-width: 720px;
-
-    margin: 0 auto 30px;
-}
-
-
-/* LINK BUTTON */
-
-.organization-back {
-    text-align: center;
-
-    margin-top: 45px;
-}
-
-.organization-back a {
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    min-height: 50px;
-
-    padding: 12px 28px;
-
-    border: 1px solid #bfd2c6;
-
-    border-radius: 30px;
-
-    color: #2f6b50;
-
-    background: #ffffff;
-
-    font-weight: 700;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease;
-}
-
-.organization-back a:hover {
-    transform: translateY(-3px);
-
-    background: #f0f6f2;
-}
-
-
-/* =========================================================
-   ORGANIZATION PAGE - TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .icm-grid {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-    }
-
-    .icm-image {
-        max-width: 650px;
-
-        margin: 0 auto;
-    }
-
-    .organization-flow-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .organization-improvement-box {
-        grid-template-columns: 1fr;
-    }
-
-    .card-support-inner {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-    }
-
-    .organization-result-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-/* =========================================================
-   ORGANIZATION PAGE - MOBILE
-   ========================================================= */
-
-@media (max-width: 680px) {
-
-    .organization-page-hero {
-        padding: 65px 0;
-    }
-
-    .organization-page-hero h1 {
-        font-size: 32px;
-
-        line-height: 1.5;
-    }
-
-    .organization-page-hero p:not(.section-label) {
-        font-size: 15px;
-
-        line-height: 2;
-    }
-
-    .organization-intro-text {
-        font-size: 15px;
-
-        line-height: 2;
-    }
-
-    .organization-philosophy-box {
-        padding: 35px 25px;
-    }
-
-    .organization-philosophy-box h3 {
-        font-size: 22px;
-    }
-
-    .icm-content h3 {
-        font-size: 23px;
-    }
-
-    .icm-image {
-        padding: 20px;
-    }
-
-    .organization-flow-card {
-        padding: 30px 24px;
-    }
-
-    .organization-improvement-item {
-        padding: 25px 22px;
-    }
-
-    .card-support-content h3 {
-        font-size: 23px;
-    }
-
-    .card-support-visual {
-        padding: 30px 22px;
-    }
-
-    .organization-closing h2 {
-        font-size: 30px;
-    }
-
 }
