@@ -2436,3 +2436,146 @@ p {
         padding-right: 20px;
     }
 }
+/* =========================================
+   SERVICE PAGE NAVIGATION
+========================================= */
+
+.service-navigation-section {
+    background: #f7f7f5;
+}
+
+.service-navigation {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.service-navigation-heading h2 {
+    margin-bottom: 24px;
+}
+
+.service-navigation-heading > p:last-child {
+    line-height: 2;
+}
+
+
+.service-navigation-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+.service-navigation-card {
+    display: block;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+
+.service-navigation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border-color: #cfcfcf;
+}
+
+
+.service-navigation-number {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+}
+
+
+.service-navigation-card h3 {
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+
+.service-navigation-card p {
+    margin-bottom: 24px;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+
+.service-navigation-more {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SERVICE PAGE CONTACT
+========================================= */
+
+.service-contact-section {
+    background: #ffffff;
+}
+
+
+.service-contact-box {
+    padding: 70px 60px;
+    text-align: center;
+    background: #f7f7f5;
+}
+
+
+.service-contact-box h2 {
+    margin-bottom: 28px;
+}
+
+
+.service-contact-box p {
+    line-height: 2;
+}
+
+
+.service-contact-box .button {
+    margin-top: 24px;
+}
+
+
+/* =========================================
+   SERVICE PAGE NAVIGATION
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .service-navigation {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    .service-navigation-links {
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-navigation-card {
+        padding: 28px;
+    }
+
+
+    .service-contact-box {
+        padding: 50px 24px;
+    }
+
+
+    .service-contact-box h2 {
+        font-size: 26px;
+    }
+
+}
