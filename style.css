@@ -90,29 +90,40 @@ p {
 
 .logo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 
     color: #1f4d3b;
 
     white-space: nowrap;
 }
 
-.logo-main {
-    font-size: 25px;
-    font-weight: 700;
-
-    letter-spacing: 0.08em;
-    line-height: 1.2;
+.logo-image-frame {
+    display: block;
+    width: 145px;
+    height: 66px;
+    flex-shrink: 0;
 }
 
-.logo-sub {
+.logo-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo-office-name {
     font-size: 11px;
-
-    letter-spacing: 0.16em;
-
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
     color: #68746e;
+}
 
-    margin-top: 4px;
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #1f6f55;
+    outline-offset: 4px;
 }
 
 
@@ -1972,12 +1983,22 @@ p {
         min-height: 70px;
     }
 
-    .logo-main {
-        font-size: 20px;
+    .logo {
+        gap: 7px;
     }
 
-    .logo-sub {
+    .logo-image-frame {
+        width: 124px;
+        height: 56px;
+    }
+
+    .logo-image {
+        width: 100%;
+    }
+
+    .logo-office-name {
         font-size: 9px;
+        letter-spacing: 0.04em;
     }
 
     .nav {
