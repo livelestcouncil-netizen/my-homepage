@@ -1030,6 +1030,17 @@ button:focus-visible {
     padding-left: 10px;
 }
 
+.column-all-link {
+    display: inline-block;
+    margin-top: 26px;
+    color: #1f4d3b;
+    font-weight: 700;
+}
+
+.column-all-link:hover {
+    color: #a5282e;
+}
+
 .article-hero {
     padding: 86px 0 52px;
     background: #f5f8f6;
