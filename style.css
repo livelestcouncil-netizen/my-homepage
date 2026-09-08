@@ -2791,3 +2791,128 @@ button:focus-visible {
         font-size: 15px;
     }
 }
+
+
+/* =========================================================
+   COLUMN
+   ========================================================= */
+
+.column-section {
+    background: #f5f8f6;
+}
+
+.column-heading {
+    margin-bottom: 28px;
+}
+
+.column-list {
+    border-top: 1px solid #cfdad4;
+}
+
+.column-link {
+    display: block;
+    padding: 24px 4px;
+    border-bottom: 1px solid #cfdad4;
+    color: #1f4d3b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.column-link-title,
+.column-link-date {
+    display: block;
+}
+
+.column-link-date {
+    margin-top: 8px;
+    color: #5b7469;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.column-link:hover {
+    color: #a5282e;
+    padding-left: 10px;
+}
+
+.column-all-link {
+    display: inline-block;
+    margin-top: 26px;
+    color: #1f4d3b;
+    font-weight: 700;
+}
+
+.column-all-link:hover {
+    color: #a5282e;
+}
+
+.article-hero {
+    padding: 76px 0 44px;
+    background: #f5f8f6;
+}
+
+.article-kicker {
+    margin: 0 0 18px;
+    color: #1f6f55;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.article-hero h1 {
+    margin: 0;
+    color: #1f382d;
+    font-size: clamp(27px, 3.2vw, 38px);
+    line-height: 1.38;
+}
+
+.article-date {
+    display: block;
+    margin-top: 16px;
+    color: #5b7469;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+}
+
+.article-body {
+    padding: 80px 0 100px;
+}
+
+.article-body p {
+    margin: 0 0 28px;
+    color: #5e6b64;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.article-back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1f4d3b;
+    font-weight: 700;
+}
+
+.article-back:hover {
+    color: #a5282e;
+}
+
+@media (max-width: 680px) {
+    .column-link {
+        font-size: 16px;
+    }
+
+    .article-hero {
+        padding: 56px 0 34px;
+    }
+
+    .article-body {
+        padding: 58px 0 75px;
+    }
+
+    .article-body p {
+        font-size: 16px;
+    }
+}
