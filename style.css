@@ -2938,3 +2938,5 @@ button:focus-visible {
   .layout-quick-links { width: 100%; }
   .layout-quick-links a { flex: 1 1 auto; text-align: center; }
 }
+
+.service-trigger{color:#397056!important;font-size:14px!important;font-weight:700;line-height:1.7!important;margin-top:18px!important}.section-inline-contact{align-items:center;border-top:1px solid #dce7e1;display:flex;gap:24px;justify-content:space-between;margin-top:38px;padding-top:30px}.section-inline-contact p{margin:0;font-weight:600;line-height:1.8}@media(max-width:680px){.section-inline-contact{align-items:flex-start;flex-direction:column;gap:14px}}
