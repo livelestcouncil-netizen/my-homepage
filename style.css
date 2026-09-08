@@ -3005,3 +3005,16 @@ button:focus-visible {
         padding: 0 16px;
     }
 }
+
+
+.column-link-category {
+    display: inline-block;
+    margin-bottom: 9px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: #e6f0ea;
+    color: #2f6a52;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
