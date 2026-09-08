@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://livelestcouncil-netizen.github.io/my-homepage/sitemap.txt
 Sitemap: https://livelestcouncil-netizen.github.io/my-homepage/sitemap.xml
