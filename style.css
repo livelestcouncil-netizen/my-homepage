@@ -3048,7 +3048,7 @@ button:focus-visible {
 .first-consultation-link a { color: #397056; font-weight: 700; }
 @media (max-width: 680px) { .first-consultation-steps li { grid-template-columns: 1fr; gap: 8px; padding-left: 58px; } }
 
-.service-flow-section { background: #f7faf8; }
+.service-flow-section { background: #f7faf8; }\n.service-flow-section::before { content: ""; display: block; width: min(1080px, calc(100% - 48px)); height: 210px; margin: 0 auto 46px; border-radius: 14px; background: url("images/consultation-guide-male.png") center / cover no-repeat; box-shadow: 0 10px 24px rgba(43, 70, 57, 0.08); }
 .service-guide-steps { list-style: none; margin: 0; padding: 0; counter-reset: service-step; }
 .service-guide-steps li { counter-increment: service-step; position: relative; display: grid; grid-template-columns: 180px 1fr; gap: 24px; padding: 24px 0 24px 72px; border-bottom: 1px solid #dce7e1; }
 .service-guide-steps li::before { content: counter(service-step, decimal-leading-zero); position: absolute; left: 0; top: 20px; color: #5c9477; font-family: Georgia, serif; font-size: 1.6rem; font-weight: 700; }
