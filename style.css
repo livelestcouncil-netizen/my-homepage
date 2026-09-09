@@ -3018,3 +3018,18 @@ button:focus-visible {
     font-weight: 700;
     letter-spacing: 0.04em;
 }
+
+
+/* 初めての方へ */
+.first-consultation-hero { background: linear-gradient(135deg, #f4f8f5, #ffffff, #eaf3ed); }
+.first-consultation-note { border-left: 4px solid #5c9477; background: #f5f9f6; padding: 22px 26px; }
+.first-consultation-note p { margin: 0; line-height: 1.9; }
+.first-consultation-examples { background: #f7faf8; }
+.first-consultation-steps { list-style: none; margin: 0; padding: 0; counter-reset: consultation-step; }
+.first-consultation-steps li { counter-increment: consultation-step; position: relative; display: grid; grid-template-columns: 185px 1fr; gap: 24px; padding: 24px 0 24px 74px; border-bottom: 1px solid #dce7e1; }
+.first-consultation-steps li::before { content: counter(consultation-step, decimal-leading-zero); position: absolute; left: 0; top: 20px; color: #5c9477; font-family: Georgia, serif; font-size: 1.6rem; font-weight: 700; }
+.first-consultation-steps strong { color: #263c32; font-size: 1.06rem; }
+.first-consultation-steps span { line-height: 1.8; }
+.first-consultation-link { margin: 30px 0 0; text-align: center; }
+.first-consultation-link a { color: #397056; font-weight: 700; }
+@media (max-width: 680px) { .first-consultation-steps li { grid-template-columns: 1fr; gap: 8px; padding-left: 58px; } }
