@@ -3068,3 +3068,14 @@ button:focus-visible {
   .problem-item h3 { grid-column: 2; margin: 0; font-size: 17px; line-height: 1.55; }
   .problem-item .problem-description { grid-column: 2; margin: 0; font-size: 14px; line-height: 1.75; }
 }
+
+
+.support-cases-grid { display: grid; gap: 20px; }
+.support-case { background: #fff; border: 1px solid #dce7e1; border-radius: 14px; padding: 30px 34px; }
+.support-case-label { color: #397056; font-size: 12px; font-weight: 800; letter-spacing: .1em; margin: 0 0 12px; }
+.support-case h2 { color: #263c32; font-size: 1.35rem; line-height: 1.55; margin: 0 0 24px; }
+.support-case dl { margin: 0; }
+.support-case dt { color: #397056; font-size: .9rem; font-weight: 700; margin-top: 18px; }
+.support-case dt:first-child { margin-top: 0; }
+.support-case dd { color: #53645c; line-height: 1.85; margin: 5px 0 0; }
+@media (max-width: 680px) { .support-case { padding: 24px 20px; } .support-case h2 { font-size: 1.2rem; } }
