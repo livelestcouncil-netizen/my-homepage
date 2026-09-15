@@ -3123,3 +3123,19 @@ button:focus-visible {
 .article-checklist { margin: 0 0 28px; padding: 0; list-style: none; }
 .article-checklist li { position: relative; margin: 0 0 12px; padding-left: 28px; color: #53645c; line-height: 1.85; }
 .article-checklist li::before { content: "✓"; position: absolute; left: 0; color: #397056; font-weight: 700; }
+
+/* Article consultation: keep the reading flow and make the next step clear. */
+.article-consultation { margin: 42px 0 32px; padding: clamp(22px, 4vw, 36px); background: #eef5f0; border: 1px solid #cbded2; border-radius: 14px; }
+.article-body .article-consultation-label { margin: 0 0 12px; color: #2f6a52; font-size: 0.875rem; font-weight: 700; }
+.article-body .article-consultation h2 { margin: 0 0 20px; font-size: clamp(1.375rem, 3vw, 1.75rem); line-height: 1.55; }
+.article-consultation-list { display: grid; gap: 16px; margin: 24px 0; padding: 0; list-style: none; }
+.article-consultation-list li { padding-bottom: 16px; border-bottom: 1px solid #cbded2; }
+.article-consultation-list strong, .article-consultation-list span { display: block; font-size: 1rem; line-height: 1.8; }
+.article-consultation-list strong { color: #234c3c; margin-bottom: 4px; }
+.article-consultation-list span { color: #405c4f; }
+.article-consultation-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 24px; }
+.article-consultation-actions .button { max-width: 100%; text-align: center; white-space: normal; font-size: 1rem; }
+.article-consultation-link { color: #234c3c; text-decoration: underline; text-underline-offset: 4px; font-size: 1rem; line-height: 1.7; }
+.article-body .article-consultation-hint { margin: 16px 0 0; font-size: 0.875rem; line-height: 1.8; color: #405c4f; }
+.article-consultation a:focus-visible { outline: 3px solid #234c3c; outline-offset: 4px; }
+@media (max-width: 680px) { .article-consultation-actions { align-items: stretch; flex-direction: column; } .article-consultation-actions .button { width: 100%; padding: 15px 16px; } }
