@@ -3079,3 +3079,47 @@ button:focus-visible {
 .support-case dt:first-child { margin-top: 0; }
 .support-case dd { color: #53645c; line-height: 1.85; margin: 5px 0 0; }
 @media (max-width: 680px) { .support-case { padding: 24px 20px; } .support-case h2 { font-size: 1.2rem; } }
+
+/* Supplied columns: preserve readable source lists and quotations. */
+.supplied-column-body { overflow-wrap: anywhere; }
+.supplied-column-body h3 { margin: 38px 0 18px; color: #263c32; font-size: 1.2rem; line-height: 1.6; }
+.supplied-column-body ol { padding-left: 1.8em; margin: 0 0 28px; color: #53645c; line-height: 1.85; }
+.supplied-column-body li { font-size: 1rem; margin-bottom: 12px; }
+.supplied-column-body blockquote { margin: 24px 0; padding: 22px 26px; border-left: 4px solid #5c9477; background: #f4f8f5; }
+.supplied-column-body blockquote p { margin: 0; }
+.supplied-column-body hr { border: 0; border-top: 1px solid #d8e2dc; margin: 42px 0; }
+.supplied-column-body a { color: #1f4d3b; text-decoration: underline; }
+.column-link-description {
+    display: block;
+    margin-top: 7px;
+    color: #5e6b64;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.column-link-category {
+    display: inline-block;
+    margin-bottom: 9px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: #e6f0ea;
+    color: #2f6a52;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+.article-category {
+    display: inline-block;
+    margin: 18px 0 0;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #e6f0ea;
+    color: #2f6a52;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+.article-body h2 { color: #263c32; font-size: 1.4rem; line-height: 1.6; margin: 52px 0 18px; }
+.article-checklist { margin: 0 0 28px; padding: 0; list-style: none; }
+.article-checklist li { position: relative; margin: 0 0 12px; padding-left: 28px; color: #53645c; line-height: 1.85; }
+.article-checklist li::before { content: "✓"; position: absolute; left: 0; color: #397056; font-weight: 700; }
