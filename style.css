@@ -3155,3 +3155,5 @@ button:focus-visible {
 @media (max-width: 760px) { .newsletter-download-grid { grid-template-columns: 1fr; } .newsletter-download-card img { width: 115px; } }
 @media (max-width: 460px) { .newsletter-download-card { flex-direction: column; } .newsletter-download-card img { width: 180px; max-width: 100%; margin: 0 auto; } }
 
+.article-newsletter .newsletter-download-grid { grid-template-columns: minmax(0, 680px); }
+
