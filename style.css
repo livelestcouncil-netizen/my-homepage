@@ -3134,6 +3134,17 @@ button:focus-visible {
 .article-checklist li { position: relative; margin: 0 0 12px; padding-left: 28px; color: #53645c; line-height: 1.85; }
 .article-checklist li::before { content: "✓"; position: absolute; left: 0; color: #397056; font-weight: 700; }
 
+/* Article FAQ: keep common questions easy to scan on desktop and mobile. */
+.article-faq { margin: 52px 0 28px; }
+.article-body .article-faq h2 { margin-top: 0; }
+.article-faq details { border-top: 1px solid #d6e1db; }
+.article-faq details:last-child { border-bottom: 1px solid #d6e1db; }
+.article-faq summary { cursor: pointer; color: #263c32; font-size: 1.05rem; font-weight: 700; line-height: 1.7; padding: 18px 42px 18px 0; position: relative; }
+.article-faq summary::after { content: "+"; position: absolute; right: 8px; top: 16px; color: #397056; font-size: 1.45rem; line-height: 1; }
+.article-faq details[open] summary::after { content: "−"; }
+.article-body .article-faq details p { margin: 0; padding: 0 36px 20px 0; color: #53645c; }
+.article-faq summary:focus-visible { outline: 3px solid #397056; outline-offset: 4px; }
+
 /* Article consultation: keep the reading flow and make the next step clear. */
 .article-consultation { margin: 42px 0 32px; padding: clamp(22px, 4vw, 36px); background: #eef5f0; border: 1px solid #cbded2; border-radius: 14px; }
 .article-body .article-consultation-label { margin: 0 0 12px; color: #2f6a52; font-size: 0.875rem; font-weight: 700; }
@@ -3166,4 +3177,3 @@ button:focus-visible {
 @media (max-width: 460px) { .newsletter-download-card { flex-direction: column; } .newsletter-download-card img { width: 180px; max-width: 100%; margin: 0 auto; } }
 
 .article-newsletter .newsletter-download-grid { grid-template-columns: minmax(0, 680px); }
-
