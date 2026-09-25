@@ -3020,7 +3020,10 @@ button:focus-visible {
 .liebe-welcome-image img { height: auto; }
 .liebe-welcome-label { color: #397056; font-size: 12px; font-weight: 700; letter-spacing: .12em; margin: 0 0 8px; }
 .liebe-welcome h2 { color: #203a30; font-size: clamp(20px, 2.4vw, 27px); line-height: 1.45; margin: 0 0 8px; }
-.liebe-welcome-copy > p:last-child { color: #4c6255; font-size: 15px; line-height: 1.8; margin: 0; }
+.liebe-welcome-copy > p:not(.liebe-welcome-label) { color: #4c6255; font-size: 15px; line-height: 1.8; margin: 0; }
+.liebe-welcome-link { display: inline-block; margin-top: 12px; color: #1f4d3b; font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.liebe-welcome-link:hover { color: #397056; }
+.liebe-welcome-link:focus-visible { outline: 3px solid #397056; outline-offset: 4px; }
 .service-grid { gap: 18px; }
 .service-card { min-height: 100%; }
 .column-section { border-top: 1px solid #dce7e1; border-bottom: 1px solid #dce7e1; }
@@ -3031,7 +3034,7 @@ button:focus-visible {
   .layout-quick-links a { flex: 1 1 auto; text-align: center; }
   .liebe-welcome-inner { grid-template-columns: 108px minmax(0, 1fr); gap: 14px; padding: 18px 0; }
   .liebe-welcome h2 { font-size: 18px; }
-  .liebe-welcome-copy > p:last-child { font-size: 13px; }
+  .liebe-welcome-copy > p:not(.liebe-welcome-label) { font-size: 13px; }
 }
 @media (max-width: 340px) {
   .liebe-welcome-inner { grid-template-columns: 1fr; gap: 4px; text-align: center; }
