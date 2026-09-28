@@ -3278,3 +3278,13 @@ button:focus-visible {
 .character-card a { color: #1f4d3b; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .character-card a:focus-visible { outline: 3px solid #397056; outline-offset: 4px; }
 @media (max-width: 650px) { .character-card { grid-template-columns: 1fr; gap: 8px; padding: 20px; text-align: center; } .character-card picture { max-width: 180px; margin: 0 auto; } }
+
+/* First consultation page shortcuts */
+.consultation-page-links { padding-top: 22px; padding-bottom: 26px; max-width: 980px; }
+.consultation-page-links > p { margin: 0 0 12px; color: #4c6255; font-size: 14px; }
+.consultation-page-links > div { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.consultation-page-links a { display: flex; justify-content: space-between; align-items: center; gap: 8px; border: 1px solid #c9dcd0; border-radius: 10px; padding: 14px 16px; color: #1f4d3b; background: #f7faf8; font-size: 14px; font-weight: 700; text-decoration: none; }
+.consultation-page-links a:hover { background: #eaf3ed; }
+.consultation-page-links a:focus-visible { outline: 3px solid #397056; outline-offset: 3px; }
+#consultation-flow, #consultation-fees, #consultation-preparation, #consultation-faq { scroll-margin-top: 110px; }
+@media (max-width: 650px) { .consultation-page-links > div { grid-template-columns: repeat(2, minmax(0, 1fr)); } .consultation-page-links a { padding: 12px; font-size: 13px; } }
