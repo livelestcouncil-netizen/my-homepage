@@ -3292,3 +3292,8 @@ button:focus-visible {
 /* Character introduction video */
 .character-introduction-video { display: block; width: 100%; height: auto; border-radius: 14px; background: #f4f8f5; margin-bottom: 20px; }
 .character-voice-credit { font-size: 12px; color: #4c6255; line-height: 1.8; }
+
+/* Related services in support cases */
+.support-case-service { margin: 24px 0 0; padding-top: 18px; border-top: 1px solid #dce7e1; }
+.support-case-service-link { display: inline-block; color: #1f4d3b; font-weight: 700; line-height: 1.7; text-decoration: underline; text-underline-offset: 3px; }
+.support-case-service-link:focus-visible { outline: 3px solid #397056; outline-offset: 4px; }
