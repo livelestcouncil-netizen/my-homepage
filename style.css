@@ -3304,3 +3304,12 @@ button:focus-visible {
 @media (max-width: 650px) {
   #service-consultation-topics .service-guide-steps li, #service-consultation-flow .service-guide-steps li { grid-template-columns: minmax(0, 1fr); gap: 10px; padding-left: 48px; }
 }
+
+/* Working hours article navigation */
+.working-hours-toc { margin: 0 0 36px; padding: 24px; border: 1px solid #d8e2dc; border-radius: 12px; background: #f4f8f5; }
+.working-hours-toc p { margin: 0 0 12px; }
+.working-hours-toc ol { margin: 0; padding-left: 1.5em; }
+.working-hours-toc li { margin: 10px 0; line-height: 1.7; }
+.working-hours-toc a { color: #1f4d3b; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.working-hours-toc .working-hours-toc-extras { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #d8e2dc; }
+#check-records, #check-agreement, #check-response, #article-newsletter-working-hours-title, #related-support { scroll-margin-top: 140px; }
