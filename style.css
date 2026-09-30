@@ -3299,7 +3299,7 @@ button:focus-visible {
 .support-case-service-link:focus-visible { outline: 3px solid #397056; outline-offset: 4px; }
 
 /* Service consultation entry and in-page navigation */
-#service-consultation-topics, #service-consultation-flow, #rules-support-case { scroll-margin-top: 130px; }
+#service-consultation-topics, #service-consultation-flow, #rules-support-case, #service-consultation-faq { scroll-margin-top: 130px; }
 #service-consultation-topics .service-guide-steps li > *, #service-consultation-flow .service-guide-steps li > * { min-width: 0; }
 @media (max-width: 650px) {
   #service-consultation-topics .service-guide-steps li, #service-consultation-flow .service-guide-steps li { grid-template-columns: minmax(0, 1fr); gap: 10px; padding-left: 48px; }
