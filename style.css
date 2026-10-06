@@ -3018,6 +3018,14 @@ button:focus-visible {
 .liebe-welcome-inner { display: grid; grid-template-columns: 160px minmax(0, 1fr); align-items: center; gap: 30px; max-width: 820px; padding: 22px 0; }
 .liebe-welcome-image, .liebe-welcome-image img { display: block; width: 100%; }
 .liebe-welcome-image img { height: auto; }
+.hidamari-autumn-motion img { animation: hidamari-autumn-sway 4.8s ease-in-out infinite; transform-origin: 50% 82%; }
+@keyframes hidamari-autumn-sway {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-7px) rotate(2deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hidamari-autumn-motion img { animation: none; transform: none; }
+}
 .liebe-welcome-label { color: #397056; font-size: 12px; font-weight: 700; letter-spacing: .12em; margin: 0 0 8px; }
 .liebe-welcome h2 { color: #203a30; font-size: clamp(20px, 2.4vw, 27px); line-height: 1.45; margin: 0 0 8px; }
 .liebe-welcome-copy > p:not(.liebe-welcome-label) { color: #4c6255; font-size: 15px; line-height: 1.8; margin: 0; }
