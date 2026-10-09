@@ -3321,3 +3321,14 @@ button:focus-visible {
 .working-hours-toc a { color: #1f4d3b; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .working-hours-toc .working-hours-toc-extras { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #d8e2dc; }
 #check-records, #check-agreement, #check-response, #article-newsletter-working-hours-title, #related-support { scroll-margin-top: 140px; }
+
+/* Article table of contents */
+.article-toc { margin: 30px 0 38px; padding: 22px 26px; border: 1px solid #d7e3dc; border-radius: 14px; background: #f5f9f6; }
+.article-body .article-toc h2 { margin: 0 0 12px; font-size: 1.15rem; }
+.article-toc ol { margin: 0; padding-left: 1.5em; }
+.article-toc li { padding: 3px 0; }
+.article-toc a { display: inline-block; padding: 5px 0; color: #234c3c; text-decoration: underline; text-underline-offset: 4px; line-height: 1.7; }
+.article-toc a:hover { color: #52755f; }
+.article-toc a:focus-visible { outline: 2px solid #2f6a52; outline-offset: 4px; border-radius: 2px; }
+.article-body .article-toc-target { scroll-margin-top: 160px; }
+@media (max-width: 600px) { .article-toc { padding: 20px; } }
