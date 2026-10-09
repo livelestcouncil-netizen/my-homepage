@@ -3332,3 +3332,12 @@ button:focus-visible {
 .article-toc a:focus-visible { outline: 2px solid #2f6a52; outline-offset: 4px; border-radius: 2px; }
 .article-body .article-toc-target { scroll-margin-top: 160px; }
 @media (max-width: 600px) { .article-toc { padding: 20px; } }
+
+/* Retention support guide anchor offsets */
+#retention-practical-points, #retention-external-consultation, #retention-support-process, #retention-faq { scroll-margin-top: 120px; }
+
+/* Organization support guide anchor offsets */
+#organization-support-guide, #organization-support-faq { scroll-margin-top: 120px; }
+
+/* Payroll and insurance procedure guide anchors */
+#procedure-support-guide, #payroll-support, #insurance-procedures { scroll-margin-top: 120px; }
