@@ -3349,3 +3349,15 @@ button:focus-visible {
 
 /* Compact homepage concern cards; detailed support lives on service pages. */
 @media (min-width: 681px) { .problem-section .problem-item { min-height: 160px; padding: 20px; } }
+
+/* Theme filtering keeps the default chronological list intact. */
+#column-results .column-link[hidden] { display: none; }
+.column-results-title { scroll-margin-top: 140px; }
+[data-column-theme] { scroll-margin-top: 140px; }
+[data-column-theme][aria-current="true"] { background: #1f4d3b; color: #fff; border-color: #1f4d3b; }
+.home-column-themes { margin-top: 28px; padding-top: 24px; border-top: 1px solid #dce7e1; }
+.home-column-themes h3 { font-size: 1.15rem; color: #263c32; margin: 0 0 14px; }
+.home-column-theme-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.home-column-theme-links a { display: flex; align-items: center; min-height: 44px; padding: 9px 16px; border: 1px solid #cfddd5; border-radius: 24px; background: #f5f9f6; color: #234c3c; font-size: .9rem; font-weight: 600; line-height: 1.6; }
+.home-column-theme-links a:hover { border-color: #397056; background: #edf5ef; }
+.home-column-theme-links a:focus-visible { outline: 3px solid #397056; outline-offset: 3px; }
