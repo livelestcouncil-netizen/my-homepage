@@ -3055,7 +3055,7 @@ button:focus-visible {
 
 
 /* Service icons */
-.service-icon{align-items:center;background:#edf5f0;border-radius:50%;color:#397056;display:inline-flex;height:46px;justify-content:center;margin:15px 0 4px;width:46px}.service-icon svg{fill:none;height:25px;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.7;width:25px}
+.service-icon{align-items:center;display:inline-flex;height:88px;justify-content:center;margin:15px 0 8px;width:88px;flex-shrink:0}.service-icon img{display:block;height:80px;width:80px;max-width:100%}
 
 
 /* =========================
@@ -3341,3 +3341,11 @@ button:focus-visible {
 
 /* Payroll and insurance procedure guide anchors */
 #procedure-support-guide, #payroll-support, #insurance-procedures { scroll-margin-top: 120px; }
+
+/* Links from existing homepage concern cards */
+.problem-support-link { grid-column: 2; min-width: 0; max-width: 100%; display: inline-flex; align-items: center; min-height: 44px; margin-top: 10px; color: #1f4d3b; font-size: 14px; font-weight: 700; line-height: 1.7; text-decoration: underline; text-underline-offset: 3px; }
+.problem-support-link:hover { color: #397056; }
+.problem-support-link:focus-visible { outline: 3px solid #397056; outline-offset: 4px; }
+
+/* Compact homepage concern cards; detailed support lives on service pages. */
+@media (min-width: 681px) { .problem-section .problem-item { min-height: 160px; padding: 20px; } }
